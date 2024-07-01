@@ -3,14 +3,13 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { RootState } from 'types/redux';
 
 type InitialState = {
-    modeTheme: string;
+    modeTheme?: string;
     language: string;
     isMultipleLanguage: boolean;
 };
 
 const initialState: InitialState = {
-    modeTheme: import.meta.env.THEME,
-    language: import.meta.env.REACT_APP_LANGUAGE,
+    language: 'vn',
     isMultipleLanguage: true
 };
 
@@ -22,6 +21,8 @@ export const appSlice = createSlice({
             state.modeTheme = action.payload;
         },
         setLanguage: (state, action: PayloadAction<string>) => {
+            console.log(action.payload);
+
             state.language = action.payload;
         },
         setIsMultipleLanguage: (state, action: PayloadAction<boolean>) => {

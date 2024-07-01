@@ -1,4 +1,4 @@
-import React, { ReactElement, useState } from 'react';
+import React, { ReactElement, useEffect, useState } from 'react';
 
 import { useTheme } from '@mui/material/styles';
 import {
@@ -22,13 +22,16 @@ import {
 import CallIcon from '@mui/icons-material/Call';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage, IntlProvider } from 'react-intl';
 import AppRegistrationIcon from '@mui/icons-material/AppRegistration';
 import LoginIcon from '@mui/icons-material/Login';
 import Logo from 'ui-component/Logo';
 
 import { IconBook, IconCreditCard, IconDashboard, IconHome2 } from '@tabler/icons';
 import menuTXL from 'assets/images/landing/Home/MenuTXL.svg';
+import { useDispatch } from 'react-redux';
+import { setLanguage } from 'redux/slice/app.slice';
+import useConfig from 'hooks/useConfig';
 
 interface ElevationScrollProps {
     children: ReactElement;
@@ -65,8 +68,11 @@ const nav = [
 ];
 
 const AppBar = ({ ...others }) => {
+    const { onChangeLocale } = useConfig();
+    // const AppBar: React.FC<AppBarProps> = ({ currentLanguage, onChangeLanguage, ...others }) => {
     const [drawerToggle, setDrawerToggle] = React.useState<boolean>(false);
     const [isActive, setIsActive] = useState(0);
+    const dispatch = useDispatch();
     const drawerToggler = (open: boolean) => (event: any) => {
         if (event.type! === 'keydown' && (event.key! === 'Tab' || event.key! === 'Shift')) {
             return;
@@ -88,12 +94,32 @@ const AppBar = ({ ...others }) => {
     const [anchorEl, setAnchorEl] = useState(null);
 
     const handleClick = (event: any) => {
+        dispatch(setLanguage('EN'));
+
         setAnchorEl(event.currentTarget);
     };
 
-    const handleClose = () => {
+    // const getMessages = (language: string) => {
+    //     return language === 'VN' ? vietnameseMessages : englishMessages;
+    // };
+    const [currentLanguage, setCurrentLanguage] = useState('VN');
+    // const [messages, setMessages] = useState(getMessages('VN'));
+
+    const handleClose = (language: 'VN' | 'EN') => {
+        onChangeLocale(language);
+        dispatch(setLanguage(language));
+        setCurrentLanguage(language);
+
+        // setMessages(getMessages(language));
+        localStorage.setItem('selectedLanguage', language);
         setAnchorEl(null);
     };
+    useEffect(() => {
+        const savedLanguage = localStorage.getItem('selectedLanguage');
+        if (savedLanguage) {
+            setCurrentLanguage(savedLanguage);
+        }
+    }, []);
 
     return (
         <ElevationScroll {...others}>
@@ -169,13 +195,13 @@ const AppBar = ({ ...others }) => {
                                 }}
                                 onClick={handleClick}
                             >
-                                <FormattedMessage id="dr_vi" /> <KeyboardArrowDownIcon />
+                                {currentLanguage} <KeyboardArrowDownIcon />
                             </Button>
-                            <Menu anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleClose}>
-                                <MenuItem onClick={handleClose}>
+                            <Menu anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={() => setAnchorEl(null)}>
+                                <MenuItem onClick={() => handleClose('VN')}>
                                     <FormattedMessage id="dr_vi" />
                                 </MenuItem>
-                                <MenuItem onClick={handleClose}>
+                                <MenuItem onClick={() => handleClose('EN')}>
                                     <FormattedMessage id="dr_eng" />
                                 </MenuItem>
                             </Menu>
