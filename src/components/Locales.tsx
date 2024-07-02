@@ -6,7 +6,7 @@ import { useAppSelector } from '../hooks/useAppSelector';
 
 const loadLocaleData = (locale: string) => {
     switch (locale) {
-        case 'en':
+        case 'EN':
             return import('utils/locales/en.json');
         default:
             return import('utils/locales/vn.json');

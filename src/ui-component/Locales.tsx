@@ -7,7 +7,7 @@ import useConfig from 'hooks/useConfig';
 // load locales files
 const loadLocaleData = (locale: string) => {
     switch (locale) {
-        case 'en':
+        case 'EN':
             return import('utils/locales/en.json');
 
         default:
@@ -30,6 +30,8 @@ const Locales = ({ children }: LocalsProps) => {
             setMessages(d.default);
         });
     }, [locale]);
+
+    console.log(locale);
 
     return (
         <>
