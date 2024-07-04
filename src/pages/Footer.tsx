@@ -25,7 +25,7 @@ const FooterPage = () => {
             px="30px"
             my="10px"
         >
-            <Typography sx={{ fontFamily: 'inter', fontWeight: '500', fontSize: '18px', textAlign: 'center' }}>
+            <Typography sx={{ fontFamily: 'Montserrat', fontWeight: '500', fontSize: '18px', textAlign: 'center' }}>
                 <FormattedMessage id="footer" />
             </Typography>
 

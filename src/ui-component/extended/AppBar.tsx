@@ -22,7 +22,7 @@ import {
 import CallIcon from '@mui/icons-material/Call';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import { FormattedMessage, IntlProvider } from 'react-intl';
+import { FormattedMessage } from 'react-intl';
 import AppRegistrationIcon from '@mui/icons-material/AppRegistration';
 import LoginIcon from '@mui/icons-material/Login';
 import Logo from 'ui-component/Logo';

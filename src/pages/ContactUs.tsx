@@ -327,7 +327,14 @@ const ContactUs = () => {
                                             }}
                                         >
                                             <form style={{ width: '100%', marginTop: '30px' }} onSubmit={handleSubmit(onSubmit)}>
-                                                <span style={{ fontFamily: 'inter', fontWeight: '600', fontSize: '16px', color: 'black' }}>
+                                                <span
+                                                    style={{
+                                                        fontFamily: 'Montserrat',
+                                                        fontWeight: '600',
+                                                        fontSize: '16px',
+                                                        color: 'black'
+                                                    }}
+                                                >
                                                     <FormattedMessage id="lb_fullname" />
                                                 </span>
                                                 <Controller
@@ -361,7 +368,7 @@ const ContactUs = () => {
                                                     <Grid item xs={12} sm={6}>
                                                         <span
                                                             style={{
-                                                                fontFamily: 'inter',
+                                                                fontFamily: 'Montserrat',
                                                                 fontWeight: '600',
                                                                 fontSize: '16px',
                                                                 color: 'black'
@@ -389,7 +396,7 @@ const ContactUs = () => {
                                                     <Grid item xs={12} sm={6}>
                                                         <span
                                                             style={{
-                                                                fontFamily: 'inter',
+                                                                fontFamily: 'Montserrat',
                                                                 fontWeight: '600',
                                                                 fontSize: '16px',
                                                                 color: 'black'
@@ -417,7 +424,12 @@ const ContactUs = () => {
                                                 </Grid>
                                                 <Grid item xs={12} sm={12} style={{ marginTop: '20px' }}>
                                                     <span
-                                                        style={{ fontFamily: 'inter', fontWeight: '600', fontSize: '16px', color: 'black' }}
+                                                        style={{
+                                                            fontFamily: 'Montserrat',
+                                                            fontWeight: '600',
+                                                            fontSize: '16px',
+                                                            color: 'black'
+                                                        }}
                                                     >
                                                         <FormattedMessage id="messenger" />
                                                     </span>
@@ -473,7 +485,7 @@ const ContactUs = () => {
                                                             }}
                                                             disabled={isSubmitting}
                                                         >
-                                                            <Typography sx={{ fontSize: '15px', fontFamily: 'inter' }}>
+                                                            <Typography sx={{ fontSize: '15px', fontFamily: 'Montserrat' }}>
                                                                 <FormattedMessage id="contact_btn" />
                                                             </Typography>
                                                         </Button>
