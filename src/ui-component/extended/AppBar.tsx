@@ -22,7 +22,7 @@ import {
 import CallIcon from '@mui/icons-material/Call';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import { FormattedMessage, IntlProvider } from 'react-intl';
+import { FormattedMessage } from 'react-intl';
 import AppRegistrationIcon from '@mui/icons-material/AppRegistration';
 import LoginIcon from '@mui/icons-material/Login';
 import Logo from 'ui-component/Logo';
@@ -164,7 +164,7 @@ const AppBar = ({ ...others }) => {
                                         sx={{
                                             color: index === isActive ? '#00A64F' : 'none',
                                             textTransform: 'none',
-                                            fontFamily: 'inter',
+                                            fontFamily: 'Montserrat',
                                             fontSize: '18px'
                                         }}
                                     >
@@ -191,7 +191,7 @@ const AppBar = ({ ...others }) => {
                                     borderRadius: '10px',
                                     border: '1px solid #00A64F',
                                     textTransform: 'none',
-                                    fontFamily: 'inter'
+                                    fontFamily: 'Montserrat'
                                 }}
                                 onClick={handleClick}
                             >
@@ -215,7 +215,7 @@ const AppBar = ({ ...others }) => {
                                     color: '#00A64F',
                                     borderRadius: '10px',
                                     border: '1px solid #00A64F',
-                                    fontFamily: 'inter',
+                                    fontFamily: 'Montserrat',
                                     textTransform: 'none'
                                 }}
                             >
@@ -229,7 +229,7 @@ const AppBar = ({ ...others }) => {
                                     padding: '5px 14px',
                                     background: '#00A64F',
                                     marginLeft: '10px',
-                                    fontFamily: 'inter',
+                                    fontFamily: 'Montserrat',
 
                                     ':hover': { background: '#00A64F', color: 'white' },
                                     textTransform: 'none'

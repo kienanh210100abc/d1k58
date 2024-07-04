@@ -50,7 +50,7 @@ const Ecosystem = () => {
                                                     style={{
                                                         fontWeight: '500',
 
-                                                        fontFamily: 'inter',
+                                                        fontFamily: 'Montserrat',
                                                         lineHeight: '22px',
                                                         textAlign: 'justify',
                                                         color: '#333333'
@@ -83,7 +83,7 @@ const Ecosystem = () => {
                                                 <p
                                                     style={{
                                                         fontWeight: '500',
-                                                        fontFamily: 'Inter',
+                                                        fontFamily: 'Montserrat',
                                                         lineHeight: '22px',
                                                         textAlign: 'justify',
                                                         color: '#333333'

@@ -98,7 +98,7 @@ const SumIntro = () => {
                                             fontWeight: '700',
                                             ':hover': { background: '#00A64F', color: 'white' },
                                             textTransform: 'none',
-                                            fontFamily: 'inter'
+                                            fontFamily: 'Montserrat'
                                         }}
                                     >
                                         <FormattedMessage id="btn_try" />
