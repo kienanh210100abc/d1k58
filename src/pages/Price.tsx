@@ -236,7 +236,7 @@ function Price() {
                                                 <Button
                                                     onClick={() =>
                                                         window.open(
-                                                            `${process.env.REACT_APP_PUBLIC_ROUTER}/register?package=package_id_4`,
+                                                            `${process.env.REACT_APP_PUBLIC_ROUTER}/register?package=package_id_4&trialMode=trialMode`,
                                                             '_blank'
                                                         )
                                                     }
@@ -441,7 +441,7 @@ function Price() {
                                                 <Button
                                                     onClick={() =>
                                                         window.open(
-                                                            `${process.env.REACT_APP_PUBLIC_ROUTER}/register?package=package_id_1`,
+                                                            `${process.env.REACT_APP_PUBLIC_ROUTER}/register?package=package_id_1&trialMode=trialMode`,
                                                             '_blank'
                                                         )
                                                     }
@@ -648,7 +648,7 @@ function Price() {
                                                 <Button
                                                     onClick={() =>
                                                         window.open(
-                                                            `${process.env.REACT_APP_PUBLIC_ROUTER}/register?package=package_id_2`,
+                                                            `${process.env.REACT_APP_PUBLIC_ROUTER}/register?package=package_id_2&trialMode=trialMode`,
                                                             '_blank'
                                                         )
                                                     }
@@ -859,7 +859,7 @@ function Price() {
                                                 <Button
                                                     onClick={() =>
                                                         window.open(
-                                                            `${process.env.REACT_APP_PUBLIC_ROUTER}/register?package=package_id_3`,
+                                                            `${process.env.REACT_APP_PUBLIC_ROUTER}/register?package=package_id_3&trialMode=trialMode`,
                                                             '_blank'
                                                         )
                                                     }
