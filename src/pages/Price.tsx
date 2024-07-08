@@ -64,6 +64,7 @@ function Price() {
                             }}
                         >
                             <Grid
+                                className="four-price"
                                 container
                                 spacing={2}
                                 sx={{

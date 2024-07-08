@@ -3,7 +3,7 @@
  */
 
 import axios, { AxiosError, AxiosRequestConfig, AxiosResponse } from 'axios';
-import { AUTH_GATE_API } from 'constants/index';
+import { BASE_SSO_URL } from 'constants/index';
 import qs from 'qs';
 
 const axiosServices = axios.create();
@@ -15,7 +15,7 @@ axiosServices.interceptors.response.use(
 );
 
 export const axiosClient = axios.create({
-    baseURL: AUTH_GATE_API,
+    baseURL: BASE_SSO_URL,
     headers: {
         'Content-Type': 'application/json'
     },
