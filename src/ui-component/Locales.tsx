@@ -31,8 +31,6 @@ const Locales = ({ children }: LocalsProps) => {
         });
     }, [locale]);
 
-    console.log(locale);
-
     return (
         <>
             {messages && (

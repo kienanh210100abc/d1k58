@@ -233,7 +233,7 @@ function Price() {
                                                 fontSize="16px"
                                                 textAlign="center"
                                                 fontFamily="Montserrat"
-                                                style={{ whiteSpace: 'nowrap' }}
+                                                height={'43px'}
                                             >
                                                 <FormattedMessage id="bonus1" />
                                             </Typography>
@@ -444,7 +444,7 @@ function Price() {
                                                 fontSize="16px"
                                                 textAlign="center"
                                                 fontFamily="Montserrat"
-                                                style={{ whiteSpace: 'nowrap' }}
+                                                height={'43px'}
                                             >
                                                 <FormattedMessage id="bonus2" />
                                             </Typography>
@@ -657,7 +657,7 @@ function Price() {
                                                 fontSize="16px"
                                                 textAlign="center"
                                                 fontFamily="Montserrat"
-                                                style={{ whiteSpace: 'nowrap' }}
+                                                height={'43px'}
                                             >
                                                 <FormattedMessage id="bonus3" />
                                             </Typography>
@@ -874,7 +874,7 @@ function Price() {
                                                 fontSize="16px"
                                                 textAlign="center"
                                                 fontFamily="Montserrat"
-                                                style={{ whiteSpace: 'nowrap' }}
+                                                height={'43px'}
                                             >
                                                 <FormattedMessage id="bonus3" />
                                             </Typography>
