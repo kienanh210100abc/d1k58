@@ -202,7 +202,13 @@ function Price() {
                                             >
                                                 <FormattedMessage id="buy2" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
+                                            <Typography
+                                                fontWeight="600"
+                                                fontSize="16px"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                                height={'43px'}
+                                            >
                                                 <FormattedMessage id="price_b1" />
                                             </Typography>
                                             <br />
@@ -233,7 +239,7 @@ function Price() {
                                                 fontSize="16px"
                                                 textAlign="center"
                                                 fontFamily="Montserrat"
-                                                style={{ whiteSpace: 'nowrap' }}
+                                                height={'43px'}
                                             >
                                                 <FormattedMessage id="bonus1" />
                                             </Typography>
@@ -413,7 +419,13 @@ function Price() {
                                             >
                                                 <FormattedMessage id="buy2" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
+                                            <Typography
+                                                fontWeight="600"
+                                                fontSize="16px"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                                height={'43px'}
+                                            >
                                                 <FormattedMessage id="price_b1" />
                                             </Typography>
                                             <br />
@@ -444,7 +456,7 @@ function Price() {
                                                 fontSize="16px"
                                                 textAlign="center"
                                                 fontFamily="Montserrat"
-                                                style={{ whiteSpace: 'nowrap' }}
+                                                height={'43px'}
                                             >
                                                 <FormattedMessage id="bonus2" />
                                             </Typography>
@@ -626,7 +638,13 @@ function Price() {
                                             >
                                                 <FormattedMessage id="buy2" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
+                                            <Typography
+                                                fontWeight="600"
+                                                fontSize="16px"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                                height={'43px'}
+                                            >
                                                 <FormattedMessage id="price_b1" />
                                             </Typography>
                                             <br />
@@ -657,7 +675,7 @@ function Price() {
                                                 fontSize="16px"
                                                 textAlign="center"
                                                 fontFamily="Montserrat"
-                                                style={{ whiteSpace: 'nowrap' }}
+                                                height={'43px'}
                                             >
                                                 <FormattedMessage id="bonus3" />
                                             </Typography>
@@ -843,7 +861,13 @@ function Price() {
                                             >
                                                 <FormattedMessage id="buy2" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
+                                            <Typography
+                                                fontWeight="600"
+                                                fontSize="16px"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                                height={'43px'}
+                                            >
                                                 <FormattedMessage id="hd_contact" />
                                             </Typography>
                                             <br />
@@ -874,7 +898,7 @@ function Price() {
                                                 fontSize="16px"
                                                 textAlign="center"
                                                 fontFamily="Montserrat"
-                                                style={{ whiteSpace: 'nowrap' }}
+                                                height={'43px'}
                                             >
                                                 <FormattedMessage id="bonus3" />
                                             </Typography>

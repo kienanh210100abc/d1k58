@@ -85,6 +85,7 @@ const SumIntro = () => {
                                 <br />
                                 <Typography fontFamily="Montserrat" fontWeight="500" color="#393939" width="100%" px="10%" align="justify">
                                     <Button
+                                        onClick={() => window.open(`${process.env.REACT_APP_PUBLIC_ROUTER}/register`, '_blank')}
                                         sx={{
                                             borderRadius: '41px',
                                             fontSize: {
