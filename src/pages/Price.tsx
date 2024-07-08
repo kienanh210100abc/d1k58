@@ -64,7 +64,6 @@ function Price() {
                             }}
                         >
                             <Grid
-                                className="four-price"
                                 container
                                 spacing={2}
                                 sx={{
@@ -229,7 +228,13 @@ function Price() {
                                             >
                                                 <FormattedMessage id="sale" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
+                                            <Typography
+                                                fontWeight="600"
+                                                fontSize="16px"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                                style={{ whiteSpace: 'nowrap' }}
+                                            >
                                                 <FormattedMessage id="bonus1" />
                                             </Typography>
                                             <br />
@@ -434,7 +439,13 @@ function Price() {
                                             >
                                                 <FormattedMessage id="sale" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
+                                            <Typography
+                                                fontWeight="600"
+                                                fontSize="16px"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                                style={{ whiteSpace: 'nowrap' }}
+                                            >
                                                 <FormattedMessage id="bonus2" />
                                             </Typography>
                                             <br />
@@ -641,7 +652,13 @@ function Price() {
                                             >
                                                 <FormattedMessage id="sale" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
+                                            <Typography
+                                                fontWeight="600"
+                                                fontSize="16px"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                                style={{ whiteSpace: 'nowrap' }}
+                                            >
                                                 <FormattedMessage id="bonus3" />
                                             </Typography>
                                             <br />
@@ -852,7 +869,13 @@ function Price() {
                                             >
                                                 <FormattedMessage id="sale" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
+                                            <Typography
+                                                fontWeight="600"
+                                                fontSize="16px"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                                style={{ whiteSpace: 'nowrap' }}
+                                            >
                                                 <FormattedMessage id="bonus3" />
                                             </Typography>
                                             <br />
