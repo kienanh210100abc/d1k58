@@ -202,7 +202,13 @@ function Price() {
                                             >
                                                 <FormattedMessage id="buy2" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
+                                            <Typography
+                                                fontWeight="600"
+                                                fontSize="16px"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                                height={'43px'}
+                                            >
                                                 <FormattedMessage id="price_b1" />
                                             </Typography>
                                             <br />
@@ -413,7 +419,13 @@ function Price() {
                                             >
                                                 <FormattedMessage id="buy2" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
+                                            <Typography
+                                                fontWeight="600"
+                                                fontSize="16px"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                                height={'43px'}
+                                            >
                                                 <FormattedMessage id="price_b1" />
                                             </Typography>
                                             <br />
@@ -626,7 +638,13 @@ function Price() {
                                             >
                                                 <FormattedMessage id="buy2" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
+                                            <Typography
+                                                fontWeight="600"
+                                                fontSize="16px"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                                height={'43px'}
+                                            >
                                                 <FormattedMessage id="price_b1" />
                                             </Typography>
                                             <br />
@@ -843,7 +861,13 @@ function Price() {
                                             >
                                                 <FormattedMessage id="buy2" />
                                             </Typography>
-                                            <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
+                                            <Typography
+                                                fontWeight="600"
+                                                fontSize="16px"
+                                                textAlign="center"
+                                                fontFamily="Montserrat"
+                                                height={'43px'}
+                                            >
                                                 <FormattedMessage id="hd_contact" />
                                             </Typography>
                                             <br />
