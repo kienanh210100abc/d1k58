@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- <html lang="en"> -->
+<html lang="{{ LANGUAGE_CODE }}">
     <head>
         <script>
             (function (w, d, s, l, i) {
@@ -19,6 +20,8 @@
 
         <link rel="alternate" hreflang="vi" href="https://light.traxem.vn/" />
         <link rel="alternate" hreflang="en" href="https://light.traxem.vn/en" />
+        <meta property="og:locale" content="vi_VN" />
+        <meta property="og:locale:alternate" content="en_US" />
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, init ial-scale=1" />
@@ -95,6 +98,38 @@
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
             rel="stylesheet"
         />
+        <script>
+            (function () {
+                var path = window.location.pathname;
+                var isEnglish = path.startsWith('/en');
+
+                if (isEnglish) {
+                    document.querySelector('meta[property="og:url"]').setAttribute('content', 'https://light.traxem.vn/en');
+                    document
+                        .querySelector('meta[property="og:title"]')
+                        .setAttribute('content', 'TraXem Light - Peace of mind consumption, transparent information.');
+                    document
+                        .querySelector('meta[property="og:description"]')
+                        .setAttribute(
+                            'content',
+                            'TraXem Light is an advanced solution developed to assist businesses in creating and managing QR codes containing their product information. The primary goal of TraXem Light is to increase transparency regarding the origin and details of products, fostering trust among manufacturers, businesses, and consumers.'
+                        );
+
+                    document.querySelector('meta[name="twitter:url"]').setAttribute('content', 'https://light.traxem.vn/en');
+                    document
+                        .querySelector('meta[name="twitter:title"]')
+                        .setAttribute('content', 'TraXem Light - Peace of mind consumption, transparent information.');
+                    document
+                        .querySelector('meta[name="twitter:description"]')
+                        .setAttribute(
+                            'content',
+                            'TraXem Light is an advanced solution developed to assist businesses in creating and managing QR codes containing their product information. The primary goal of TraXem Light is to increase transparency regarding the origin and details of products, fostering trust among manufacturers, businesses, and consumers.'
+                        );
+
+                    document.documentElement.lang = 'en';
+                }
+            })();
+        </script>
     </head>
     <body>
         <noscript
