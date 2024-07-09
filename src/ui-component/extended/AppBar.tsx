@@ -32,7 +32,7 @@ import menuTXL from 'assets/images/landing/Home/MenuTXL.svg';
 import { useDispatch } from 'react-redux';
 import { setLanguage } from 'redux/slice/app.slice';
 import useConfig from 'hooks/useConfig';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 interface ElevationScrollProps {
     children: ReactElement;
@@ -106,7 +106,7 @@ const AppBar = ({ ...others }) => {
     const [currentLanguage, setCurrentLanguage] = useState('VN');
     // const [messages, setMessages] = useState(getMessages('VN'));
     const navigate = useNavigate();
-
+    const location = useLocation();
     const handleClose = (language: 'VN' | 'EN') => {
         onChangeLocale(language);
         dispatch(setLanguage(language));
