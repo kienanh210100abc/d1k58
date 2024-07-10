@@ -32,7 +32,7 @@
         <meta property="og:title" content="TraXem Light - Minh bạch và tra cứu thông tin bằng mã QR" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://light.traxem.vn/" />
-
+        <meta property="og:url:en" content="https://light.traxem.vn/en" />
         <meta
             property="og:description"
             content="TraXem Light là một giải pháp tạo ra sự minh bạch xuyên suốt qua QR code trên thiết bị di động. Mục tiêu hàng đầu của TraXem Light là truyền tải thông tin của sản phẩm, mang lại sự tin cậy giữa nhà sản xuất, doanh nghiệp và người tiêu dùng. Doanh nghiệp có thể dễ dàng công khai nguồn gốc xuất xứ, quy trình sản xuất và các thông tin hữu ích khác của sản phẩm và lưu trữ trong một mã QR đơn giản. Từ đó giúp người tiêu dùng dễ dàng truy cập thông tin sản phẩm nhờ thao tác quét mã QR bằng camera của điện thoại."
@@ -101,14 +101,16 @@
             document.addEventListener('DOMContentLoaded', function () {
                 const updateMetadata = () => {
                     const isEnglish = window.location.pathname.startsWith('/en');
-                    let title, description;
+                    let title, description, url;
 
                     if (isEnglish) {
                         title = document.querySelector('meta[property="og:title:en"]').getAttribute('content');
                         description = document.querySelector('meta[property="og:description:en"]').getAttribute('content');
+                        url = document.querySelector('meta[property="og:url:en"]').getAttribute('content');
                     } else {
                         title = document.querySelector('meta[property="og:title"]').getAttribute('content');
                         description = document.querySelector('meta[property="og:description"]').getAttribute('content');
+                        url = document.querySelector('meta[property="og:url"]').getAttribute('content');
                     }
 
                     // Cập nhật các thẻ meta og:title và og:description hiện có
@@ -122,7 +124,10 @@
                     document.querySelector('meta[property="twitter:title"]').setAttribute('content', title);
                     document.querySelector('meta[property="twitter:description"]').setAttribute('content', description);
 
-                    console.log('Metadata updated. Language:', isEnglish ? 'English' : 'Vietnamese');
+                    // console.log('Metadata updated. Language:', isEnglish ? 'English' : 'Vietnamese');
+                    // console.log('metadata title: ', title);
+                    // console.log('metadata description: ', description);
+                    // console.log('metadata url: ', url);
                 };
 
                 // Chạy hàm khi trang được tải
