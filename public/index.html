@@ -23,7 +23,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, init ial-scale=1" />
         <meta name="theme-color" content="#00A64F" />
-        <meta name="title" content="TraXem Light -  Minh bạch và tra cứu thông tin bằng mã QR" />
+        <meta name="title" content="TRAXEM Light -  Minh bạch và tra cứu thông tin bằng mã QR" />
         <meta
             property="description"
             content="TraXem Light là một giải pháp tạo ra sự minh bạch xuyên suốt qua QR code trên thiết bị di động. Mục tiêu hàng đầu của TraXem Light là truyền tải thông tin của sản phẩm, mang lại sự tin cậy giữa nhà sản xuất, doanh nghiệp và người tiêu dùng. Doanh nghiệp có thể dễ dàng công khai nguồn gốc xuất xứ, quy trình sản xuất và các thông tin hữu ích khác của sản phẩm và lưu trữ trong một mã QR đơn giản. Từ đó giúp người tiêu dùng dễ dàng truy cập thông tin sản phẩm nhờ thao tác quét mã QR bằng camera của điện thoại."
@@ -99,23 +99,37 @@
         <div id="root"></div>
         <script>
             document.addEventListener('DOMContentLoaded', function () {
-                const isEnglish = window.location.pathname.includes('/en');
-                let title, description;
+                const updateMetadata = () => {
+                    const isEnglish = window.location.pathname.startsWith('/en');
+                    let title, description;
 
-                if (isEnglish) {
-                    title = document.querySelector('meta[property="og:title:en"]').getAttribute('content');
-                    description = document.querySelector('meta[property="og:description:en"]').getAttribute('content');
-                } else {
-                    title = document.querySelector('meta[property="og:title"]').getAttribute('content');
-                    description = document.querySelector('meta[property="og:description"]').getAttribute('content');
-                }
+                    if (isEnglish) {
+                        title = document.querySelector('meta[property="og:title:en"]').getAttribute('content');
+                        description = document.querySelector('meta[property="og:description:en"]').getAttribute('content');
+                    } else {
+                        title = document.querySelector('meta[property="og:title"]').getAttribute('content');
+                        description = document.querySelector('meta[property="og:description"]').getAttribute('content');
+                    }
 
-                // Cập nhật các thẻ meta og:title và og:description hiện có
-                document.querySelector('meta[property="og:title"]').setAttribute('content', title);
-                document.querySelector('meta[property="og:description"]').setAttribute('content', description);
+                    // Cập nhật các thẻ meta og:title và og:description hiện có
+                    document.querySelector('meta[property="og:title"]').setAttribute('content', title);
+                    document.querySelector('meta[property="og:description"]').setAttribute('content', description);
 
-                // Tùy chọn: cập nhật tiêu đề trang
-                document.title = title;
+                    // Cập nhật tiêu đề trang
+                    document.title = title;
+
+                    // Cập nhật các thẻ meta twitter
+                    document.querySelector('meta[property="twitter:title"]').setAttribute('content', title);
+                    document.querySelector('meta[property="twitter:description"]').setAttribute('content', description);
+
+                    console.log('Metadata updated. Language:', isEnglish ? 'English' : 'Vietnamese');
+                };
+
+                // Chạy hàm khi trang được tải
+                updateMetadata();
+
+                // Thêm một event listener để cập nhật metadata khi URL thay đổi (cho các ứng dụng single-page)
+                window.addEventListener('popstate', updateMetadata);
             });
         </script>
     </body>
