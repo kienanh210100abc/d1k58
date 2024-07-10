@@ -123,7 +123,9 @@ const AppBar = ({ ...others }) => {
         document.querySelector('meta[property="og:description"]')?.setAttribute('content', description);
         document.querySelector('meta[property="twitter:title"]')?.setAttribute('content', title);
         document.querySelector('meta[property="twitter:description"]')?.setAttribute('content', description);
-        document.title = title;
+
+        // Giữ nguyên title của tab
+        document.title = 'TRAXEM Light';
     };
 
     useEffect(() => {
