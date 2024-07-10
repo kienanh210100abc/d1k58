@@ -14,7 +14,7 @@
             })(window, document, 'script', 'dataLayer', 'GTM-KKJK64VK');
         </script>
 
-        <title>TraXemLight</title>
+        <title>TRAXEM Light</title>
         <link rel="icon" href="%PUBLIC_URL%/logo.svg" />
 
         <link rel="alternate" hreflang="vi" href="https://light.traxem.vn/" />
@@ -97,5 +97,26 @@
         ></noscript>
         <noscript>You need to enable JavaScript to run this app.</noscript>
         <div id="root"></div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const isEnglish = window.location.pathname.includes('/en');
+                let title, description;
+
+                if (isEnglish) {
+                    title = document.querySelector('meta[property="og:title:en"]').getAttribute('content');
+                    description = document.querySelector('meta[property="og:description:en"]').getAttribute('content');
+                } else {
+                    title = document.querySelector('meta[property="og:title"]').getAttribute('content');
+                    description = document.querySelector('meta[property="og:description"]').getAttribute('content');
+                }
+
+                // Cập nhật các thẻ meta og:title và og:description hiện có
+                document.querySelector('meta[property="og:title"]').setAttribute('content', title);
+                document.querySelector('meta[property="og:description"]').setAttribute('content', description);
+
+                // Tùy chọn: cập nhật tiêu đề trang
+                document.title = title;
+            });
+        </script>
     </body>
 </html>
