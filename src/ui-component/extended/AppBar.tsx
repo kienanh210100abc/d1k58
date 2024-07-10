@@ -151,7 +151,7 @@ const AppBar = ({ ...others }) => {
             onChangeLocale('VN');
             dispatch(setLanguage('VN'));
         }
-    }, [location.pathname, dispatch]);
+    }, [location.pathname, dispatch, onChangeLocale]);
 
     return (
         <ElevationScroll {...others}>
