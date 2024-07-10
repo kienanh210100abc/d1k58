@@ -97,6 +97,7 @@
         ></noscript>
         <noscript>You need to enable JavaScript to run this app.</noscript>
         <div id="root"></div>
+
         <script>
             document.addEventListener('DOMContentLoaded', function () {
                 const updateMetadata = () => {
@@ -106,11 +107,11 @@
                     if (isEnglish) {
                         title = document.querySelector('meta[property="og:title:en"]').getAttribute('content');
                         description = document.querySelector('meta[property="og:description:en"]').getAttribute('content');
-                        url = document.querySelector('meta[property="og:url:en"]').getAttribute('content');
+                        url = 'https://light.traxem.vn/en/';
                     } else {
                         title = document.querySelector('meta[property="og:title"]').getAttribute('content');
                         description = document.querySelector('meta[property="og:description"]').getAttribute('content');
-                        url = document.querySelector('meta[property="og:url"]').getAttribute('content');
+                        url = 'https://light.traxem.vn';
                     }
 
                     // Cập nhật tiêu đề trang
@@ -136,6 +137,23 @@
 
                 // Thêm một event listener để cập nhật metadata khi URL thay đổi (cho các ứng dụng single-page)
                 window.addEventListener('popstate', updateMetadata);
+
+                window.addEventListener('languageChange', updateMetadata);
+
+                const observer = new MutationObserver((mutations) => {
+                    mutations.forEach((mutation) => {
+                        if (mutation.type === 'attributes' && mutation.attributeName === 'lang') {
+                            updateMetadata();
+                        }
+                    });
+                });
+
+                observer.observe(document.documentElement, { attributes: true });
+
+                // Thêm một hàm global để kích hoạt cập nhật metadata
+                window.triggerMetadataUpdate = function () {
+                    updateMetadata();
+                };
             });
         </script>
     </body>
