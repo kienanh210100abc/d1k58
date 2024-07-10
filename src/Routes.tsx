@@ -10,9 +10,14 @@ const PagesLanding = Loadable(lazy(() => import('pages')));
 
 const MainRoutes = () => (
     <Routes>
+        {/* Route cho tiếng Việt */}
         <Route path="/" element={<MainLayout />}>
-            {/* ================== Landing ================== */}
-            <Route path="/" element={<PagesLanding />} />
+            <Route index element={<PagesLanding />} />
+        </Route>
+
+        {/* Route cho tiếng Anh */}
+        <Route path="/en" element={<MainLayout />}>
+            <Route index element={<PagesLanding />} />
         </Route>
     </Routes>
 );

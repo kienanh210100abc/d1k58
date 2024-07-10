@@ -32,6 +32,7 @@ import menuTXL from 'assets/images/landing/Home/MenuTXL.svg';
 import { useDispatch } from 'react-redux';
 import { setLanguage } from 'redux/slice/app.slice';
 import useConfig from 'hooks/useConfig';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 interface ElevationScrollProps {
     children: ReactElement;
@@ -104,6 +105,8 @@ const AppBar = ({ ...others }) => {
     // };
     const [currentLanguage, setCurrentLanguage] = useState('VN');
     // const [messages, setMessages] = useState(getMessages('VN'));
+    const navigate = useNavigate();
+    const location = useLocation();
 
     const handleClose = (language: 'VN' | 'EN') => {
         onChangeLocale(language);
@@ -113,13 +116,42 @@ const AppBar = ({ ...others }) => {
         // setMessages(getMessages(language));
         localStorage.setItem('selectedLanguage', language);
         setAnchorEl(null);
+        if (language === 'EN') {
+            // Chuyển sang tiếng Anh
+            if (!location.pathname.startsWith('/en')) {
+                navigate('/en' + location.pathname);
+            }
+        } else {
+            // Chuyển sang tiếng Việt
+            if (location.pathname.startsWith('/en')) {
+                navigate(location.pathname.replace('/en', ''));
+            }
+        }
     };
+    // useEffect(() => {
+    //     const savedLanguage = localStorage.getItem('selectedLanguage');
+    //     if (savedLanguage) {
+    //         setCurrentLanguage(savedLanguage);
+    //     }
+    // }, []);
     useEffect(() => {
         const savedLanguage = localStorage.getItem('selectedLanguage');
         if (savedLanguage) {
-            setCurrentLanguage(savedLanguage);
+            setCurrentLanguage(savedLanguage as 'VN' | 'EN');
         }
     }, []);
+
+    useEffect(() => {
+        if (location.pathname.startsWith('/en')) {
+            setCurrentLanguage('EN');
+            onChangeLocale('EN');
+            dispatch(setLanguage('EN'));
+        } else {
+            setCurrentLanguage('VN');
+            onChangeLocale('VN');
+            dispatch(setLanguage('VN'));
+        }
+    }, [location.pathname, dispatch]);
 
     return (
         <ElevationScroll {...others}>
