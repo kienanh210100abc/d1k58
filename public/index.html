@@ -113,20 +113,17 @@
                         url = document.querySelector('meta[property="og:url"]').getAttribute('content');
                     }
 
-                    // Cập nhật các thẻ meta og:title và og:description hiện có
-                    document.querySelector('meta[property="og:title"]').setAttribute('content', title);
-                    document.querySelector('meta[property="og:description"]').setAttribute('content', description);
-
                     // Cập nhật tiêu đề trang
                     document.title = title;
 
+                    // Cập nhật các thẻ meta og:title và og:description hiện có
+                    document.querySelector('meta[property="og:title"]').setAttribute('content', title);
+                    document.querySelector('meta[property="og:description"]').setAttribute('content', description);
+                    document.querySelector('meta[property="og:url"]').setAttribute('content', url);
                     // Cập nhật các thẻ meta twitter
                     document.querySelector('meta[property="twitter:title"]').setAttribute('content', title);
                     document.querySelector('meta[property="twitter:description"]').setAttribute('content', description);
-
-                    document.querySelector('meta[property="og:url"]').setAttribute('content', url);
                     document.querySelector('meta[property="twitter:url"]').setAttribute('content', url);
-                    document.querySelector('link[rel="canonical"]').setAttribute('href', url);
 
                     console.log('Metadata updated. Language:', isEnglish ? 'English' : 'Vietnamese');
                     console.log('metadata title: ', title);
