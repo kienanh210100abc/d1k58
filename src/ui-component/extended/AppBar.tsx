@@ -109,6 +109,23 @@ const AppBar = ({ ...others }) => {
     const location = useLocation();
     const onChangeLocaleRef = useRef(onChangeLocale);
 
+    const updateMetadata = (language: 'VN' | 'EN') => {
+        let title, description;
+        if (language === 'EN') {
+            title = document.querySelector('meta[property="og:title:en"]')?.getAttribute('content') || '';
+            description = document.querySelector('meta[property="og:description:en"]')?.getAttribute('content') || '';
+        } else {
+            title = document.querySelector('meta[property="og:title:vi"]')?.getAttribute('content') || '';
+            description = document.querySelector('meta[property="og:description:vi"]')?.getAttribute('content') || '';
+        }
+
+        document.querySelector('meta[property="og:title"]')?.setAttribute('content', title);
+        document.querySelector('meta[property="og:description"]')?.setAttribute('content', description);
+        document.querySelector('meta[property="twitter:title"]')?.setAttribute('content', title);
+        document.querySelector('meta[property="twitter:description"]')?.setAttribute('content', description);
+        document.title = title;
+    };
+
     useEffect(() => {
         onChangeLocaleRef.current = onChangeLocale;
     }, [onChangeLocale]);
@@ -117,7 +134,7 @@ const AppBar = ({ ...others }) => {
         onChangeLocaleRef.current(language);
         dispatch(setLanguage(language));
         setCurrentLanguage(language);
-
+        updateMetadata(language);
         localStorage.setItem('selectedLanguage', language);
         setAnchorEl(null);
 
@@ -145,6 +162,7 @@ const AppBar = ({ ...others }) => {
             setCurrentLanguage(lang);
             onChangeLocaleRef.current(lang);
             dispatch(setLanguage(lang));
+            updateMetadata(lang);
         };
 
         if (location.pathname.startsWith('/en')) {
