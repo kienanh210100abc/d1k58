@@ -144,10 +144,12 @@ const AppBar = ({ ...others }) => {
         if (language === 'EN') {
             if (!currentPath.startsWith('/en')) {
                 navigate('/en' + currentPath);
+                window.location.reload();
             }
         } else {
             if (currentPath.startsWith('/en')) {
                 navigate(currentPath.slice(3) || '/');
+                window.location.reload();
             }
         }
     };
