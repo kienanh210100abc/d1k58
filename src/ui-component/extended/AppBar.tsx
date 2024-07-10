@@ -1,4 +1,4 @@
-import React, { ReactElement, useEffect, useState } from 'react';
+import React, { ReactElement, useEffect, useRef, useState } from 'react';
 
 import { useTheme } from '@mui/material/styles';
 import {
@@ -107,33 +107,32 @@ const AppBar = ({ ...others }) => {
     // const [messages, setMessages] = useState(getMessages('VN'));
     const navigate = useNavigate();
     const location = useLocation();
+    const onChangeLocaleRef = useRef(onChangeLocale);
+
+    useEffect(() => {
+        onChangeLocaleRef.current = onChangeLocale;
+    }, [onChangeLocale]);
 
     const handleClose = (language: 'VN' | 'EN') => {
-        onChangeLocale(language);
+        onChangeLocaleRef.current(language);
         dispatch(setLanguage(language));
         setCurrentLanguage(language);
 
-        // setMessages(getMessages(language));
         localStorage.setItem('selectedLanguage', language);
         setAnchorEl(null);
+
+        const currentPath = location.pathname;
         if (language === 'EN') {
-            // Chuyển sang tiếng Anh
-            if (!location.pathname.startsWith('/en')) {
-                navigate('/en' + location.pathname);
+            if (!currentPath.startsWith('/en')) {
+                navigate('/en' + currentPath);
             }
         } else {
-            // Chuyển sang tiếng Việt
-            if (location.pathname.startsWith('/en')) {
-                navigate(location.pathname.replace('/en', ''));
+            if (currentPath.startsWith('/en')) {
+                navigate(currentPath.slice(3) || '/');
             }
         }
     };
-    // useEffect(() => {
-    //     const savedLanguage = localStorage.getItem('selectedLanguage');
-    //     if (savedLanguage) {
-    //         setCurrentLanguage(savedLanguage);
-    //     }
-    // }, []);
+
     useEffect(() => {
         const savedLanguage = localStorage.getItem('selectedLanguage');
         if (savedLanguage) {
@@ -142,16 +141,25 @@ const AppBar = ({ ...others }) => {
     }, []);
 
     useEffect(() => {
+        const updateLanguage = (lang: 'VN' | 'EN') => {
+            setCurrentLanguage(lang);
+            onChangeLocaleRef.current(lang);
+            dispatch(setLanguage(lang));
+        };
+
         if (location.pathname.startsWith('/en')) {
-            setCurrentLanguage('EN');
-            onChangeLocale('EN');
-            dispatch(setLanguage('EN'));
+            updateLanguage('EN');
         } else {
-            setCurrentLanguage('VN');
-            onChangeLocale('VN');
-            dispatch(setLanguage('VN'));
+            updateLanguage('VN');
         }
-    }, [location.pathname, dispatch, onChangeLocale]);
+    }, [location.pathname, dispatch]);
+
+    // useEffect(() => {
+    //     const savedLanguage = localStorage.getItem('selectedLanguage');
+    //     if (savedLanguage) {
+    //         setCurrentLanguage(savedLanguage);
+    //     }
+    // }, []);
 
     return (
         <ElevationScroll {...others}>
