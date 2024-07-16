@@ -82,7 +82,7 @@ function Price() {
                                         color="black"
                                         width="10%"
                                         px="10%"
-                                        style={{ border: '0.2px solid #f1f1f1', borderRadius: '30px' }}
+                                        style={{ border: '1px solid #C3C3C3', borderRadius: '30px' }}
                                         sx={typographyStyle}
                                     >
                                         <Box display="flex" justifyContent="center" alignItems="center">
@@ -207,7 +207,7 @@ function Price() {
                                                 fontSize="16px"
                                                 textAlign="center"
                                                 fontFamily="Montserrat"
-                                                height={'43px'}
+                                                // height={'43px'}
                                             >
                                                 <FormattedMessage id="price_b1" />
                                             </Typography>
@@ -299,7 +299,7 @@ function Price() {
                                         color="black"
                                         width="100%"
                                         px="10%"
-                                        style={{ border: '0.2px solid #f1f1f1', borderRadius: '30px' }}
+                                        style={{ border: '1px solid #C3C3C3', borderRadius: '30px' }}
                                         sx={typographyStyle}
                                     >
                                         <Box display="flex" justifyContent="center" alignItems="center">
@@ -424,7 +424,7 @@ function Price() {
                                                 fontSize="16px"
                                                 textAlign="center"
                                                 fontFamily="Montserrat"
-                                                height={'43px'}
+                                                // height={'43px'}
                                             >
                                                 <FormattedMessage id="price_b1" />
                                             </Typography>
@@ -643,7 +643,7 @@ function Price() {
                                                 fontSize="16px"
                                                 textAlign="center"
                                                 fontFamily="Montserrat"
-                                                height={'43px'}
+                                                // height={'43px'}
                                             >
                                                 <FormattedMessage id="price_b1" />
                                             </Typography>
@@ -741,7 +741,7 @@ function Price() {
                                         color="black"
                                         width="100%"
                                         px="10%"
-                                        style={{ border: '0.2px solid #f1f1f1', borderRadius: '30px' }}
+                                        style={{ border: '1px solid #C3C3C3', borderRadius: '30px' }}
                                         sx={typographyStyle}
                                     >
                                         <Box display="flex" justifyContent="center" alignItems="center">
@@ -866,7 +866,7 @@ function Price() {
                                                 fontSize="16px"
                                                 textAlign="center"
                                                 fontFamily="Montserrat"
-                                                height={'43px'}
+                                                // height={'43px'}
                                             >
                                                 <FormattedMessage id="hd_contact" />
                                             </Typography>
