@@ -7,6 +7,7 @@ import Procedure from './Procedure';
 import Price from './Price';
 import Ecosystem from './Ecosystem';
 import ContactUs from './ContactUs';
+import Application from './Application';
 // =============================|| LANDING MAIN ||============================= //
 
 const Landing = () => (
@@ -16,6 +17,7 @@ const Landing = () => (
             <Benefit />
             <Feature />
             <Procedure />
+            <Application />
             <Price />
             <Ecosystem />
             <ContactUs />
