@@ -342,7 +342,7 @@ function Price() {
                                                 <FormattedMessage id="time" />
                                             </Typography>
                                             <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
-                                                <FormattedMessage id="1m" />
+                                                <FormattedMessage id="1y" />
                                             </Typography>
                                             <br />
                                             <Typography
@@ -355,7 +355,7 @@ function Price() {
                                                 <FormattedMessage id="time2" />
                                             </Typography>
                                             <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
-                                                <FormattedMessage id="90d" />
+                                                <FormattedMessage id="30d" />
                                             </Typography>
                                             <br />
                                             <Typography
@@ -561,7 +561,7 @@ function Price() {
                                                 <FormattedMessage id="time" />
                                             </Typography>
                                             <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
-                                                <FormattedMessage id="1m" />
+                                                <FormattedMessage id="1y" />
                                             </Typography>
                                             <br />
                                             <Typography
@@ -574,7 +574,7 @@ function Price() {
                                                 <FormattedMessage id="time2" />
                                             </Typography>
                                             <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
-                                                <FormattedMessage id="90d" />
+                                                <FormattedMessage id="30d" />
                                             </Typography>
                                             <br />
                                             <Typography
@@ -784,7 +784,7 @@ function Price() {
                                                 <FormattedMessage id="time" />
                                             </Typography>
                                             <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
-                                                <FormattedMessage id="1m" />
+                                                <FormattedMessage id="ulm" />
                                             </Typography>
                                             <br />
                                             <Typography
@@ -797,7 +797,7 @@ function Price() {
                                                 <FormattedMessage id="time2" />
                                             </Typography>
                                             <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
-                                                <FormattedMessage id="90d" />
+                                                <FormattedMessage id="30d" />
                                             </Typography>
                                             <br />
                                             <Typography
