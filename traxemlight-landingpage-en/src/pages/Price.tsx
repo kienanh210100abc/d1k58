@@ -342,7 +342,7 @@ function Price() {
                                                 <FormattedMessage id="time" />
                                             </Typography>
                                             <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
-                                                <FormattedMessage id="1y" />
+                                                <FormattedMessage id="1m" />
                                             </Typography>
                                             <br />
                                             <Typography
@@ -561,7 +561,7 @@ function Price() {
                                                 <FormattedMessage id="time" />
                                             </Typography>
                                             <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
-                                                <FormattedMessage id="1y" />
+                                                <FormattedMessage id="1m" />
                                             </Typography>
                                             <br />
                                             <Typography
@@ -784,7 +784,7 @@ function Price() {
                                                 <FormattedMessage id="time" />
                                             </Typography>
                                             <Typography fontWeight="600" fontSize="16px" textAlign="center" fontFamily="Montserrat">
-                                                <FormattedMessage id="ulm" />
+                                                <FormattedMessage id="1m" />
                                             </Typography>
                                             <br />
                                             <Typography
