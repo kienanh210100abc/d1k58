@@ -1,0 +1,51 @@
+{
+  "name": "epl-next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build:staging": "cp .env.staging.example .env.production && next build",
+    "start:staging": "pnpm build:staging && pnpm dlx serve@latest out",
+    "build": "cp .env.production.example .env.production && next build",
+    "start": "pnpm build && pnpm dlx serve@latest out",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.10.3",
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@hookform/resolvers": "^3.3.2",
+    "@mui/icons-material": "^5.10.6",
+    "@mui/lab": "^5.0.0-alpha.98",
+    "@mui/material": "^5.10.4",
+    "@mui/system": "^5.10.4",
+    "@mui/utils": "^5.10.3",
+    "@mui/x-date-pickers": "^6.19.0",
+    "@tabler/icons-react": "^2.42.0",
+    "axios": "^1.6.5",
+    "dayjs": "^1.11.10",
+    "i18next": "^23.5.1",
+    "i18next-resources-to-backend": "^1.1.4",
+    "next": "^14.2.5",
+    "next-i18n-router": "^5.0.2",
+    "qs": "^6.11.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.34.2",
+    "react-hot-toast": "^2.4.1",
+    "react-i18next": "^13.2.2",
+    "sass": "^1.69.5",
+    "sharp": "^0.32.6",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/qs": "^6.9.10",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "dotenv-flow": "^4.1.0",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0",
+    "typescript": "^5"
+  }
+}

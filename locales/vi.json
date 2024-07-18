@@ -1,0 +1,147 @@
+{
+  "common": {
+    "text": {
+      "title": "TraXem Light - Minh bạch và tra cứu thông tin bằng mã QR",
+      "description": "TraXem Light là một giải pháp tạo ra sự minh bạch xuyên suốt qua QR code trên thiết bị di động. Mục tiêu hàng đầu của TraXem Light là truyền tải thông tin của sản phẩm, mang lại sự tin cậy giữa nhà sản xuất, doanh nghiệp và người tiêu dùng. Doanh nghiệp có thể dễ dàng công khai nguồn gốc xuất xứ, quy trình sản xuất và các thông tin hữu ích khác của sản phẩm và lưu trữ trong một mã QR đơn giản. Từ đó giúp người tiêu dùng dễ dàng truy cập thông tin sản phẩm nhờ thao tác quét mã QR bằng camera của điện thoại."
+    }
+  },
+  "menu": {
+    "introduction": "Giới thiệu",
+    "benefit": "Lợi ích",
+    "feature": "Tính năng nổi bật",
+    "procedure": "Quy trình",
+    "priceList": "Bảng giá",
+    "contact": "Liên hệ",
+    "register": "Đăng ký",
+    "login": "Đăng nhập"
+  },
+  "summaryIntro": {
+    "title": "An tâm tiêu dùng, thông tin minh bạch ",
+    "text1": "TraXem Light là một giải pháp tạo ra sự ",
+    "text2": "minh bạch xuyên suốt qua QR code trên thiết bị di động",
+    "text3": " Mục tiêu hàng đầu của TraXem Light là truyền tải thông tin của sản phẩm, mang lại sự tin cậy giữa nhà sản xuất, doanh nghiệp và người tiêu dùng.",
+    "text4": "Doanh nghiệp có thể dễ dàng",
+    "text5": " công khai nguồn gốc xuất xứ, quy trình sản xuất và các thông tin hữu ích khác của sản phẩm và lưu trữ trong một mã QR đơn giản",
+    "text6": ". Từ đó giúp người tiêu dùng dễ dàng truy cập thông tin sản phẩm nhờ thao tác quét mã QR bằng camera của điện thoại.",
+    "btn": "Trải nghiệm ngay"
+  },
+  "benefit": {
+    "title": "Lợi ích sử dụng",
+    "text1": "Triển khai nhanh",
+    "text2": "Thiết lập nhanh chóng, không cần kỹ thuật phức tạp.",
+    "text3": "Minh bạch thông tin",
+    "text4": "Thông qua QR code, thông tin sản phẩm dễ dàng được chia sẻ với người tiêu dùng.",
+    "text5": "Tăng độ tin cậy",
+    "text6": "Giúp tăng cường mức độ tin cậy của sản phẩm thông qua việc chứng minh nguồn gốc xuất xứ, quy trình sản xuất và các thông tin hữu ích khác.",
+    "video": "https://www.youtube.com/embed/afCThZotnQc?si=dSiZxCSUB6wocLJe"
+  },
+  "feature": {
+    "title": "Tính năng nổi bật",
+    "title1": "Truy xuất thông tin sản phẩm bằng mã QR",
+    "content1": "Người tiêu dùng quét mã QR gắn trên sản phẩm để biết được nguồn gốc xuất xứ và các thông tin khác của sản phẩm, mang lại trải nghiệm mua sắm thuận tiện và đáng tin cậy cho người tiêu dùng.",
+    "title2": "Ngân hàng mẫu sản phẩm chung",
+    "content2": "TraXem Light cung cấp nhiều mẫu trang thông tin sản phẩm đa dạng và chất lượng cao, cho phép doanh nghiệp sử dụng lại, hoặc tùy chỉnh để phù hợp với nhiều loại sản phẩm và nhu cầu của mình.",
+    "title3": "Tự do thiết kế mẫu sản phẩm",
+    "content3": "TraXem Light cho phép doanh nghiệp có thể tự thiết kế trang thông tin cho từng sản phẩm của mình. Loại bỏ các hạn chế về các mẫu sản phẩm có sẵn, doanh nghiệp có thể thoải mái sáng tạo để tạo ra các mẫu thông tin sản phẩm của riêng doanh nghiệp."
+  },
+  "procedure": {
+    "title": "Quy trình hoạt động",
+    "title1": "Tạo mẫu sản phẩm mới",
+    "content1": "Doanh nghiệp lựa chọn các thông tin muốn công khai và thiết kế giao diện cho trang thông tin sản phẩm. Ví dụ như: hình ảnh sản phẩm, thành phần nguyên liệu, quy trình sản xuất, hướng dẫn sử dụng, chứng chỉ và giải thưởng.",
+    "title2": "Nhập thông tin lô sản phẩm",
+    "content2": "Doanh nghiệp lựa chọn mẫu sản phẩm và nhập thông tin cho lô sản xuất như mã lô và ngày sản xuất và điều kiện môi trường tại thời điểm sản xuất. Ngoài ra, doanh nghiệp có thể tùy chỉnh thêm thông tin muốn chia sẻ với người tiêu dùng.",
+    "title3": "In và dán mã QR",
+    "content3": "In mã QR đã được tạo từ thông tin lô sản xuất và dán lên sản phẩm",
+    "title4": "Quét mã QR và xem thông tin",
+    "content4": "Người tiêu dùng sử dụng điện thoại hoặc máy tính bảng có camera để quét mã QR và xem thông tin sản phẩm đã được doanh nghiệp công khai."
+  },
+  "price": {
+    "price_h1": "Bảng giá",
+    "25": "25.000đ",
+    "300": " 300.000đ",
+    "900": "900.000đ",
+    "c_starter": "C-Starter",
+    "c_basic": "C-Basic",
+    "c_advanced": " C-Advanced",
+    "c_pro": " C-Pro",
+
+    "time": "Thời gian sử dụng",
+    "1m": "1 tháng",
+    "1y": "1 năm",
+    "time2": "Thời gian dùng thử",
+    "30d": "30 ngày",
+    "90d": "90 ngày",
+    "sumScan": "Số lượt quét QR tra cứu",
+    "ulm": "Không giới hạn",
+    "sumQR": " Số lượng mã QR",
+    "500QR": "500 QR",
+    "6000QR": "6000 QR",
+    "20000QR": "20.000 QR",
+    "buy": "Mua thêm mã QR",
+    "50d": "25.000đ / 500QR",
+    "storage": "Dung lượng lưu trữ",
+    "2gb": "2 GB",
+    "5gb": "5 GB",
+    "20gb": "20 GB",
+    "buy2": "Mua thêm dung lượng",
+    "price_b1": "10.000đ/ 5 GB / 1 tháng",
+    "max_user": "Số lượng active user tối đa",
+    "10": "10",
+    "100": "100",
+    "500": "500",
+    "sale": "Khuyến mãi",
+    "bonus1": "Tặng 1 tháng license cho user mới",
+    "bonus2": "Tặng 2 tháng license cho user mới",
+    "bonus3": "Tặng 3 tháng license cho user mới",
+    "btnBuy": "Mua ngay",
+    "btnTry": "Dùng thử"
+  },
+  "ecosystem": {
+    "eco_h1": "Hệ sinh thái TraXem",
+    "eco_h2": "Hãy cùng tìm hiểu những sản phẩm khác thuộc nhóm TraXem",
+    "eco_ct1": " TraXem Nông Nghiệp (NN) là một giải pháp phần mềm được áp dụng trong lĩnh vực sản xuất nông nghiệp. Với TraXem NN, các nhà sản xuất có thể dễ dàng thiết lập, theo dõi và đánh giá mỗi mùa vụ dựa trên các template có sẵn, đồng thời tạo mã QR để tối ưu hóa quy trình quản lý mùa vụ.",
+    "eco_ct2": "TraXemTM SCM là một công cụ quản lý chuỗi cung ứng mạnh mẽ, được thiết kế để hỗ trợ doanh nghiệp trong việc truy xuất nhật ký của sản phẩm và kiểm soát chống bán lấn vùng. Với người tiêu dùng, TraXemTM SCM không chỉ đơn giản là một công cụ, mà còn là một cơ hội để họ xác thực nguồn gốc của sản phẩm một cách đáng tin cậy và thuận tiện."
+  },
+  "application": {
+    "application": "Lĩnh vực ứng dụng",
+    "organic": "Thực phẩm hữu cơ",
+    "organic-ct": "Hỗ trợ tạo các mã QR gắn trên bao bì sản phẩm, giúp người tiêu dùng dễ dàng quét và truy xuất đầy đủ các thông tin mà họ quan tâm như: nguồn gốc sản phẩm, lượng calo, các tiêu chuẩn hữu cơ, thuần chay hay các tiêu chuẩn đặc biệt về tôn giáo.",
+    "consumer-product": "Sản phẩm tiêu dùng",
+    "consumer-product-ct": "Cho phép các doanh nghiệp và nhà sản xuất minh bạch thông tin sản phẩm thông qua mã QR trên bao bì. Điều này giúp người tiêu dùng có thể hiểu rõ hơn về nguồn gốc, quy trình sản xuất và thành phần của sản phẩm, từ đó mang lại sự an tâm khi mua sắm.",
+    "history": "Mẫu vật lịch sử",
+    "history-ct": "Tất cả thông tin về giới thiệu, hình ảnh, âm thanh, video và thuyết minh đa ngôn ngữ về mẫu vật lịch sử có thể gói gọn trong một mã QR đơn giản. Điều này giúp nâng cao trải nghiệm cho khách tham quan và tối đa hóa không gian trưng bày hiện vật",
+    "tourist": "Địa điểm du lịch - Di tích lịch sử",
+    "tourist-ct": "Khách du lịch có thể dễ dàng quét và tìm hiểu các thông tin, kiến thức lịch sử, các điểm đến thú vị tại địa phương với thuyết minh đa ngôn ngữ thông qua mã QR. Hỗ trợ tăng trải nghiệm du lịch, cung cấp thông tin chính xác và chi tiết cho du khách, xúc tiến du lịch địa phương.",
+    "environment": "Sản phẩm thân thiện với        môi trường",
+    "environment-ct": "Giải pháp TraXem Light cung cấp thông tin chi tiết về quy trình sản xuất và các nguyên liệu thân thiện với môi trường. Từ đó, doanh nghiệp có thể khẳng định chất lượng, nguồn gốc của sản phẩm và thu hút thêm khách hàng quan tâm đến sản phẩm bền vững.",
+    "infor-safe": "Thông tin quảng bá dịch vụ",
+    "infor-safe-ct": "Mã QR của TraXem Light được sử dụng để cung cấp các thông tin chi tiết của các đơn vị nhà hàng, khách sạn, nơi cung cấp dịch vụ như một website. QR có thể được gắn trong các ấn phẩm, thực đơn, mạng xã hội doanh nghiệp giúp tăng hiệu quả truyền thông."
+  },
+  "contact": {
+    "contact_h1": "Chúng tôi đang sẵn sàng hỗ trợ và tư vấn",
+    "contact_ct1": "Rất cảm ơn sự quan tâm của bạn đến sản phẩm TraXem Light. ",
+    "contact_ct2": " Chúng tôi sẽ liên hệ lại bạn trong thời gian sớm nhất.",
+    "contact_h2": "Có thể bạn quan tâm",
+    "contact_company": "CÔNG TY CỔ PHẦN PHẦN MỀM VIỆT QUỐC TẾ",
+    "contact_mst": " Mã số thuế:",
+    "contact_mst2": "0102029449",
+    "contact_address": "Địa chỉ:",
+    "contact_address2": "Tầng 3 CenXspace, Tháp 3 - 4, Tòa nhà Dolphin Plaza, số 28 Trần Bình, Phường Mỹ Đình 2, Quận Nam Từ Liêm, Thành Phố Hà Nội, Việt Nam",
+    "contact_phone": "Hotline:",
+    "contact_phone2": "(+84) 24 3 728 0366",
+    "contact_email": "Email:",
+    "contact_email2": "contact@vsi-international.com",
+    "contact_btn": "Gửi yêu cầu",
+    "contact_success": "Cảm ơn bạn đã quan tâm đến TraXemLight.\nChúng tôi sẽ liên hệ trong thời gian sớm nhất.",
+    "contact_failed": "Gửi liên hệ không thành công. Vui lòng thử lại.",
+    "lb_fullname": "Họ và tên",
+    "lb_phone": "Số điện thoại",
+    "lb_email": "Email",
+    "messenger": "Tin nhắn",
+    "lb_messenger": "Nội dung tin nhắn",
+    "lb_captcha": "Mã kiểm tra"
+  },
+  "footer": {
+    "footer": "© 2024 VSII. Copyright and all rights reserved"
+  }
+}
