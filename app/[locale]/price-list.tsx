@@ -82,8 +82,16 @@ export const PriceList = () => {
                   flexWrap: "nowrap",
                   "& > .MuiGrid-item": {
                     flexShrink: 0,
-                    width: { xs: "85%", sm: "45%", md: "25%" },
-                    maxWidth: { xs: "85%", sm: "45%", md: "25%" },
+                    // width: { xs: "85%", sm: "45%", md: "25%" },
+                    // maxWidth: { xs: "85%", sm: "45%", md: "25%" },
+                    "@media (max-width: 1004px)": {
+                      flexBasis: "45vh", // Chiếm toàn bộ chiều rộng
+                      maxWidth: "45vh",
+                    },
+                    // "@media (max-width: 421px)": {
+                    //   flexBasis: "60%",
+                    //   maxWidth: "60%",
+                    // },
                   },
                 }}
               >
@@ -293,13 +301,11 @@ export const PriceList = () => {
                             width: "100%",
                             marginLeft: "10px",
                             ":hover": { background: "#00A64F", color: "white" },
-                            
+
                             border: " 1px solid #00A64F",
                           }}
                         >
-                          <Typography
-                            sx={{ fontSize: "16px" }}
-                          >
+                          <Typography sx={{ fontSize: "16px" }}>
                             {t("price.btnTry")}
                           </Typography>
                         </Button>
@@ -316,12 +322,9 @@ export const PriceList = () => {
                             background: "#00A64F",
                             marginLeft: "10px",
                             ":hover": { background: "#00A64F", color: "white" },
-                            
                           }}
                         >
-                          <Typography
-                            sx={{ fontSize: "16px" }}
-                          >
+                          <Typography sx={{ fontSize: "16px" }}>
                             {t("price.btnBuy")}
                           </Typography>
                         </Button>
@@ -535,13 +538,11 @@ export const PriceList = () => {
                             width: "100%",
                             marginLeft: "10px",
                             ":hover": { background: "#00A64F", color: "white" },
-                            
+
                             border: " 1px solid #00A64F",
                           }}
                         >
-                          <Typography
-                            sx={{ fontSize: "16px" }}
-                          >
+                          <Typography sx={{ fontSize: "16px" }}>
                             {t("price.btnTry")}
                           </Typography>
                         </Button>
@@ -560,12 +561,9 @@ export const PriceList = () => {
                             background: "#00A64F",
                             marginLeft: "10px",
                             ":hover": { background: "#00A64F", color: "white" },
-                            
                           }}
                         >
-                          <Typography
-                            sx={{ fontSize: "16px" }}
-                          >
+                          <Typography sx={{ fontSize: "16px" }}>
                             {t("price.btnBuy")}
                           </Typography>
                         </Button>
@@ -783,12 +781,9 @@ export const PriceList = () => {
                             marginLeft: "10px",
                             ":hover": { background: "#00A64F", color: "white" },
                             border: " 1px solid white",
-                            
                           }}
                         >
-                          <Typography
-                            sx={{ fontSize: "16px" }}
-                          >
+                          <Typography sx={{ fontSize: "16px" }}>
                             {t("price.btnTry")}
                           </Typography>
                         </Button>
@@ -808,12 +803,9 @@ export const PriceList = () => {
                             marginLeft: "10px",
                             ":hover": { background: "#00A64F", color: "white" },
                             border: " 1px solid white",
-                            
                           }}
                         >
-                          <Typography
-                            sx={{ fontSize: "16px" }}
-                          >
+                          <Typography sx={{ fontSize: "16px" }}>
                             {t("price.btnBuy")}
                           </Typography>
                         </Button>
@@ -1029,9 +1021,7 @@ export const PriceList = () => {
                             border: " 1px solid #00A64F",
                           }}
                         >
-                          <Typography
-                            sx={{ fontSize: "16px" }}
-                          >
+                          <Typography sx={{ fontSize: "16px" }}>
                             {t("price.btnTry")}
                           </Typography>
                         </Button>
@@ -1052,9 +1042,7 @@ export const PriceList = () => {
                             ":hover": { background: "#00A64F", color: "white" },
                           }}
                         >
-                          <Typography
-                            sx={{ fontSize: "16px" }}
-                          >
+                          <Typography sx={{ fontSize: "16px" }}>
                             {t("price.btnBuy")}
                           </Typography>
                         </Button>
