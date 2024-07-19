@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { contactApi } from "@/api";
 import aceCRM from "@/assets/AceCRM.svg";
@@ -28,18 +28,18 @@ import { useTranslation } from "react-i18next";
 import { z } from "zod";
 
 const defaultValues = {
-  name: '',
-  phoneNum: '',
-  email: '',
-  message: '',
-  captvalue: '',
+  name: "",
+  phoneNum: "",
+  email: "",
+  message: "",
+  captvalue: "",
 };
 const schema = z.object({
-  name: z.string().min(4, 'min_length').max(100, 'max_length'),
-  phoneNum: z.string().regex(/(84|0)(3|5|7|8|9)+([0-9]{8})\b/, 'phone'),
+  name: z.string().min(4, "min_length").max(100, "max_length"),
+  phoneNum: z.string().regex(/(84|0)(3|5|7|8|9)+([0-9]{8})\b/, "phone"),
   email: z.string().email(),
-  message: z.string().min(5, 'min_length').max(500, 'max_length'),
-  captvalue: z.string().min(1, 'min_length'),
+  message: z.string().min(5, "min_length").max(500, "max_length"),
+  captvalue: z.string().min(1, "min_length"),
 });
 
 export const Contact = () => {
@@ -51,7 +51,7 @@ export const Contact = () => {
     formState: { errors, isSubmitting },
   } = useForm({
     defaultValues,
-    mode: 'all',
+    mode: "all",
     resolver: zodResolver(schema),
   });
   const captchaRef = useRef({ refresh: () => {} });
@@ -60,20 +60,20 @@ export const Contact = () => {
       await contactApi.sendContact(values);
       reset();
       captchaRef.current.refresh?.();
-      toast.success(t('contact.contact_success'));
+      toast.success(t("contact.contact_success"));
     } catch (error) {
-      toast.error(t('contact.contact_failed'));
+      toast.error(t("contact.contact_failed"));
     }
   };
 
   return (
     <>
-      <section id="contact" style={{ padding: '0', margin: '0' }}>
+      <section id="contact" style={{ padding: "0", margin: "0" }}>
         <Stack
           sx={{
-            background: 'linear-gradient(180deg, #E6F7EE 90%, #E6F7EE 100%)',
+            background: "linear-gradient(180deg, #E6F7EE 90%, #E6F7EE 100%)",
             flexDirection: {
-              sm: 'row',
+              sm: "row",
             },
           }}
           borderRadius={5}
@@ -82,36 +82,59 @@ export const Contact = () => {
         >
           <Container>
             <Grid mt="80px">
-              <Box display="flex" flexWrap="wrap" gap="50px">
-                <Grid spacing={5} container item xs={12} sm={12} md={12}>
+              <Box
+                display="flex"
+                flexWrap="wrap"
+                gap="50px"
+                sx={{
+                  flexDirection: {
+                    xs: "column-reverse",
+                    md: "row",
+                  },
+                }}
+              >
+                <Grid
+                  spacing={5}
+                  container
+                  item
+                  xs={12}
+                  sm={12}
+                  md={12}
+                  sx={{
+                    flexDirection: {
+                      xs: "column-reverse",
+                      md: "row",
+                    },
+                  }}
+                >
                   <Grid item xs={12} sm={12} md={6}>
                     <Box
                       flex="1"
                       minWidth="300px"
                       bgcolor="transparent"
-                      gap={'40px'}
-                      mr={'5%'}
+                      gap={"40px"}
+                      mr={"5%"}
                     >
                       <Box
                         fontWeight="600"
                         color="#414042"
                         sx={{
-                          paddingRight: { lg: '30%', sm: 'none', xs: 'none' },
+                          paddingRight: { lg: "30%", sm: "none", xs: "none" },
                           fontSize: {
-                            xs: '32px',
-                            sm: '32px',
-                            lg: '32px',
+                            xs: "32px",
+                            sm: "32px",
+                            lg: "32px",
                           },
                           width: {
-                            xs: '100%',
-                            sm: '100%',
-                            lg: '100%',
+                            xs: "100%",
+                            sm: "100%",
+                            lg: "100%",
                           },
-                          lineHeight: '39.01px',
-                          marginBottom: '10px',
+                          lineHeight: "39.01px",
+                          marginBottom: "10px",
                         }}
                       >
-                        {t('contact.contact_h1')}
+                        {t("contact.contact_h1")}
                       </Box>
                       <Typography
                         fontWeight="400"
@@ -120,13 +143,13 @@ export const Contact = () => {
                         align="justify"
                         sx={{
                           fontSize: {
-                            xs: '18px',
-                            sm: '18px',
-                            lg: '18px',
+                            xs: "18px",
+                            sm: "18px",
+                            lg: "18px",
                           },
                         }}
                       >
-                        {t('contact.contact_ct1')}
+                        {t("contact.contact_ct1")}
                       </Typography>
                       <Typography
                         fontWeight="400"
@@ -135,13 +158,13 @@ export const Contact = () => {
                         align="justify"
                         sx={{
                           fontSize: {
-                            xs: '18px',
-                            sm: '18px',
-                            lg: '18px',
+                            xs: "18px",
+                            sm: "18px",
+                            lg: "18px",
                           },
                         }}
                       >
-                        {t('contact.contact_ct2')}
+                        {t("contact.contact_ct2")}
                       </Typography>
                       <br />
                       <Typography
@@ -151,34 +174,34 @@ export const Contact = () => {
                         align="justify"
                         sx={{
                           fontSize: {
-                            xs: '18px',
-                            sm: '18px',
-                            lg: '18px',
+                            xs: "18px",
+                            sm: "18px",
+                            lg: "18px",
                           },
                         }}
                       >
-                        {t('contact.contact_h2')}
+                        {t("contact.contact_h2")}
                       </Typography>
                       <br />
                       <Box
                         width="100%"
                         sx={{
                           fontSize: {
-                            xs: '16px',
-                            sm: '16px',
-                            lg: '18px',
+                            xs: "16px",
+                            sm: "16px",
+                            lg: "18px",
                           },
                           width: {
-                            lg: '100%',
-                            sm: '100%',
+                            lg: "100%",
+                            sm: "100%",
                           },
 
-                          display: 'flex',
-                          flexWrap: 'wrap',
+                          display: "flex",
+                          flexWrap: "wrap",
                           gap: { xs: 3, sm: 4, md: 5 },
                           marginBottom: {
-                            lg: '15px',
-                            xs: '15px',
+                            lg: "15px",
+                            xs: "15px",
                           },
                         }}
                       >
@@ -187,63 +210,63 @@ export const Contact = () => {
                           alt="bg"
                           width="53px"
                           height="32px"
-                          style={{ marginTop: '5px' }}
+                          style={{ marginTop: "5px" }}
                         />
                         <img
                           src={traXemMarket.src}
                           alt="bg"
                           width="143px"
                           height="32px"
-                          style={{ marginTop: '5px' }}
+                          style={{ marginTop: "5px" }}
                         />
                         <img
                           src={traXemSCM.src}
                           alt="bg"
                           width="92px"
                           height="32px"
-                          style={{ marginTop: '5px' }}
+                          style={{ marginTop: "5px" }}
                         />
                         <img
                           src={smeAccel.src}
                           alt="bg"
                           width="97px"
                           height="32px"
-                          style={{ marginTop: '5px' }}
+                          style={{ marginTop: "5px" }}
                         />
                         <img
                           src={emPL.src}
                           alt="bg"
                           width="84px"
                           height="32px"
-                          style={{ marginTop: '5px' }}
+                          style={{ marginTop: "5px" }}
                         />
                         <img
                           src={emTeller.src}
                           alt="bg"
                           width="143px"
                           height="32px"
-                          style={{ marginTop: '5px' }}
+                          style={{ marginTop: "5px" }}
                         />
                         <img
                           src={aceCRM.src}
                           alt="bg"
                           width="102px"
                           height="32px"
-                          style={{ marginTop: '5px' }}
+                          style={{ marginTop: "5px" }}
                         />
                         <img
                           src={instanceView.src}
                           alt="bg"
                           width="96px"
                           height="32px"
-                          style={{ marginTop: '5px' }}
+                          style={{ marginTop: "5px" }}
                         />
                         <img
                           src={eMedia.src}
                           alt="bg"
                           width="116px"
                           height="32px"
-                          style={{ marginTop: '5px' }}
+                          style={{ marginTop: "5px" }}
                         />
                       </Box>
                       <br />
@@ -255,9 +278,9 @@ export const Contact = () => {
                         // align="justify"
                         sx={{
                           fontSize: {
-                            xs: '16px',
-                            sm: '16px',
-                            lg: '18px',
+                            xs: "16px",
+                            sm: "16px",
+                            lg: "18px",
                           },
                         }}
                       >
@@ -268,54 +291,54 @@ export const Contact = () => {
                           textAlign="left"
                           sx={{
                             fontSize: {
-                              xs: '20px',
-                              sm: '20px',
-                              lg: '20px',
+                              xs: "20px",
+                              sm: "20px",
+                              lg: "20px",
                             },
-                            marginBottom: '10px',
+                            marginBottom: "10px",
                           }}
                         >
-                          {t('contact.contact_company')}
+                          {t("contact.contact_company")}
                         </Typography>
 
-                        <Box sx={{ display: 'flex', marginBottom: '5px' }}>
+                        <Box sx={{ display: "flex", marginBottom: "5px" }}>
                           <Typography
                             fontWeight="500"
                             fontSize="14px"
                             lineHeight="24px"
                             sx={{
-                              textAlign: 'left',
+                              textAlign: "left",
                               width: {
-                                xs: '30%',
-                                lg: '25%',
+                                xs: "30%",
+                                lg: "25%",
                               },
                             }}
                           >
-                            {t('contact.contact_mst')}
+                            {t("contact.contact_mst")}
                           </Typography>
                           <Typography
                             fontWeight="400"
                             fontSize="14px"
                             lineHeight="24px"
                           >
-                            {t('contact.contact_mst2')}
+                            {t("contact.contact_mst2")}
                           </Typography>
                         </Box>
 
-                        <Box sx={{ display: 'flex', marginBottom: '5px' }}>
+                        <Box sx={{ display: "flex", marginBottom: "5px" }}>
                           <Typography
                             fontWeight="500"
                             fontSize="14px"
                             lineHeight="24px"
                             sx={{
-                              textAlign: 'left',
+                              textAlign: "left",
                               width: {
-                                xs: '30%',
-                                lg: '25%',
+                                xs: "30%",
+                                lg: "25%",
                               },
                             }}
                           >
-                            {t('contact.contact_address')}
+                            {t("contact.contact_address")}
                           </Typography>
                           <Typography
                             fontWeight="400"
@@ -323,24 +346,24 @@ export const Contact = () => {
                             lineHeight="24px"
                             flex="1"
                           >
-                            {t('contact.contact_address2')}
+                            {t("contact.contact_address2")}
                           </Typography>
                         </Box>
 
-                        <Box sx={{ display: 'flex', marginBottom: '5px' }}>
+                        <Box sx={{ display: "flex", marginBottom: "5px" }}>
                           <Typography
                             fontWeight="500"
                             fontSize="14px"
                             lineHeight="24px"
                             sx={{
-                              textAlign: 'left',
+                              textAlign: "left",
                               width: {
-                                xs: '30%',
-                                lg: '25%',
+                                xs: "30%",
+                                lg: "25%",
                               },
                             }}
                           >
-                            {t('contact.contact_phone')}
+                            {t("contact.contact_phone")}
                           </Typography>
                           <Typography
                             fontWeight="400"
@@ -348,24 +371,24 @@ export const Contact = () => {
                             lineHeight="24px"
                             flex="1"
                           >
-                            {t('contact.contact_phone2')}
+                            {t("contact.contact_phone2")}
                           </Typography>
                         </Box>
 
-                        <Box sx={{ display: 'flex', marginBottom: '5px' }}>
+                        <Box sx={{ display: "flex", marginBottom: "5px" }}>
                           <Typography
                             fontWeight="500"
                             fontSize="14px"
                             lineHeight="24px"
                             sx={{
-                              textAlign: 'left',
+                              textAlign: "left",
                               width: {
-                                xs: '30%',
-                                lg: '25%',
+                                xs: "30%",
+                                lg: "25%",
                               },
                             }}
                           >
-                            {t('contact.contact_email')}
+                            {t("contact.contact_email")}
                           </Typography>
                           <Typography
                             fontWeight="400"
@@ -373,7 +396,7 @@ export const Contact = () => {
                             lineHeight="24px"
                             flex="1"
                           >
-                            {t('contact.contact_email2')}
+                            {t("contact.contact_email2")}
                           </Typography>
                         </Box>
                       </Box>
@@ -382,27 +405,27 @@ export const Contact = () => {
                   <Grid item xs={12} sm={12} md={6}>
                     <Grid
                       style={{
-                        backgroundColor: 'white',
-                        paddingLeft: '40px',
-                        paddingRight: '40px',
-                        paddingTop: '10px',
-                        paddingBottom: '40px',
-                        borderRadius: '20px',
-                        boxShadow: '2px 2px 2px 2px #AAA',
+                        backgroundColor: "white",
+                        paddingLeft: "40px",
+                        paddingRight: "40px",
+                        paddingTop: "10px",
+                        paddingBottom: "40px",
+                        borderRadius: "20px",
+                        boxShadow: "2px 2px 2px 2px #AAA",
                       }}
                     >
                       <form
-                        style={{ width: '100%', marginTop: '30px' }}
+                        style={{ width: "100%", marginTop: "30px" }}
                         onSubmit={handleSubmit(onSubmit)}
                       >
                         <span
                           style={{
-                            fontWeight: '600',
-                            fontSize: '16px',
-                            color: 'black',
+                            fontWeight: "600",
+                            fontSize: "16px",
+                            color: "black",
                           }}
                         >
-                          {t('contact.lb_fullname')}
+                          {t("contact.lb_fullname")}
                         </span>
                         <Controller
                           name="name"
@@ -411,11 +434,11 @@ export const Contact = () => {
                             <TextField
                               variant="outlined"
                               sx={{
-                                'form .MuiInputBase-input': {
-                                  background: '#fffff !important',
+                                "form .MuiInputBase-input": {
+                                  background: "#fffff !important",
                                 },
                               }}
-                              label={t('contact.lb_fullname')}
+                              label={t("contact.lb_fullname")}
                               value={value}
                               onChange={onChange}
                               fullWidth
@@ -430,21 +453,21 @@ export const Contact = () => {
                           spacing={2}
                           sx={{
                             marginTop: {
-                              xs: '5px',
-                              sm: '5px',
-                              lm: '10px',
+                              xs: "5px",
+                              sm: "5px",
+                              lm: "10px",
                             },
                           }}
                         >
                           <Grid item xs={12} sm={6}>
                             <span
                               style={{
-                                fontWeight: '600',
-                                fontSize: '16px',
-                                color: 'black',
+                                fontWeight: "600",
+                                fontSize: "16px",
+                                color: "black",
                               }}
                             >
-                              {t('contact.lb_phone')}
+                              {t("contact.lb_phone")}
                             </span>
                             <Controller
                               name="phoneNum"
@@ -453,11 +476,11 @@ export const Contact = () => {
                                 <TextField
                                   variant="outlined"
                                   sx={{
-                                    'form .MuiInputBase-input': {
-                                      background: '#fffff',
+                                    "form .MuiInputBase-input": {
+                                      background: "#fffff",
                                     },
                                   }}
-                                  label={t('contact.lb_phone')}
+                                  label={t("contact.lb_phone")}
                                   value={value}
                                   onChange={onChange}
                                   fullWidth
@@ -470,12 +493,12 @@ export const Contact = () => {
                           <Grid item xs={12} sm={6}>
                             <span
                               style={{
-                                fontWeight: '600',
-                                fontSize: '16px',
-                                color: 'black',
+                                fontWeight: "600",
+                                fontSize: "16px",
+                                color: "black",
                               }}
                             >
-                              {t('contact.lb_email')}
+                              {t("contact.lb_email")}
                             </span>
                             <Controller
                               name="email"
@@ -484,11 +507,11 @@ export const Contact = () => {
                                 <TextField
                                   variant="outlined"
                                   sx={{
-                                    'form .MuiInputBase-input': {
-                                      background: '#fffff',
+                                    "form .MuiInputBase-input": {
+                                      background: "#fffff",
                                     },
                                   }}
-                                  label={t('contact.lb_email')}
+                                  label={t("contact.lb_email")}
                                   value={value}
                                   onChange={onChange}
                                   fullWidth
@@ -503,16 +526,16 @@ export const Contact = () => {
                           item
                           xs={12}
                           sm={12}
-                          style={{ marginTop: '20px' }}
+                          style={{ marginTop: "20px" }}
                         >
                           <span
                             style={{
-                              fontWeight: '600',
-                              fontSize: '16px',
-                              color: 'black',
+                              fontWeight: "600",
+                              fontSize: "16px",
+                              color: "black",
                             }}
                           >
-                            {t('contact.messenger')}
+                            {t("contact.messenger")}
                           </span>
                           <Controller
                             name="message"
@@ -522,7 +545,7 @@ export const Contact = () => {
                                 type="textarea"
                                 multiline
                                 rows={4}
-                                label={t('contact.lb_messenger')}
+                                label={t("contact.lb_messenger")}
                                 value={value}
                                 onChange={onChange}
                                 fullWidth
@@ -552,10 +575,10 @@ export const Contact = () => {
                                   <Captcha ref={captchaRef} />
 
                                   <TextField
-                                    label={t('contact.lb_captcha')}
+                                    label={t("contact.lb_captcha")}
                                     value={value}
                                     onChange={onChange}
-                                    sx={{ width: '100%' }}
+                                    sx={{ width: "100%" }}
                                     error={!!errors.captvalue?.message}
                                   />
                                 </Stack>
@@ -567,24 +590,24 @@ export const Contact = () => {
                               type="submit"
                               sx={{
                                 width: {
-                                  xs: '100%',
+                                  xs: "100%",
                                 },
-                                color: 'white',
-                                backgroundColor: '#00A64F',
-                                ':hover': {
-                                  color: 'white',
-                                  background: '#00A64F',
+                                color: "white",
+                                backgroundColor: "#00A64F",
+                                ":hover": {
+                                  color: "white",
+                                  background: "#00A64F",
                                 },
-                                textTransform: 'none',
+                                textTransform: "none",
                               }}
                               disabled={isSubmitting}
                             >
                               <Typography
                                 sx={{
-                                  fontSize: '15px',
+                                  fontSize: "15px",
                                 }}
                               >
-                                {t('contact.contact_btn')}
+                                {t("contact.contact_btn")}
                               </Typography>
                             </Button>
                           </Grid>

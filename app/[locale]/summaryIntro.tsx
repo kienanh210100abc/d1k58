@@ -64,7 +64,7 @@ export const SummaryIntro = () => {
                   <span style={{ color: "#00A64F" }}>
                     {t("summaryIntro.text2")}
                   </span>
-                  .{t("summaryIntro.text3")}
+                  {t("summaryIntro.text3")}
                 </Typography>
                 <br />
                 <Typography
