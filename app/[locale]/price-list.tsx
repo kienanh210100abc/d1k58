@@ -1004,12 +1004,7 @@ export const PriceList = () => {
                       <br />
                       <Box display="flex" justifyContent="center" mt={2}>
                         <Button
-                          onClick={() =>
-                            window.open(
-                              `${process.env.NEXT_PUBLIC_ROUTER}/register?package=package_id_3&trialMode=trialMode`,
-                              "_blank"
-                            )
-                          }
+                          onClick={() => handleScrollToSection("contact")}
                           sx={{
                             borderRadius: "10px",
                             height: "52px",
@@ -1022,7 +1017,7 @@ export const PriceList = () => {
                           }}
                         >
                           <Typography sx={{ fontSize: "16px" }}>
-                            {t("price.btnTry")}
+                            {t("menu.contact")}
                           </Typography>
                         </Button>
                       </Box>
