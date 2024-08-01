@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -H 192.168.1.86 -p 3000",
     "build:staging": "cp .env.staging.example .env.production && next build",
     "start:staging": "pnpm build:staging && pnpm dlx serve@latest out",
     "build": "cp .env.production.example .env.production && next build",

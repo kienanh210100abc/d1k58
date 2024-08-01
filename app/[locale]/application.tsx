@@ -79,7 +79,7 @@ export const Application = () => {
                         <p
                           style={{
                             fontWeight: "600",
-
+                            fontSize: "24px",
                             lineHeight: "24px",
                             textAlign: "justify",
                             color: "#414142",
@@ -144,7 +144,7 @@ export const Application = () => {
                         <p
                           style={{
                             fontWeight: "600",
-
+                            fontSize: "24px",
                             lineHeight: "24px",
                             textAlign: "justify",
                             color: "#414142",
@@ -209,7 +209,7 @@ export const Application = () => {
                         <p
                           style={{
                             fontWeight: "600",
-
+                            fontSize: "24px",
                             lineHeight: "24px",
                             textAlign: "justify",
                             color: "#414142",
@@ -274,7 +274,7 @@ export const Application = () => {
                         <p
                           style={{
                             fontWeight: "600",
-
+                            fontSize: "24px",
                             lineHeight: "29.26px",
                             textAlign: "justify",
                             color: "#414142",
@@ -340,7 +340,7 @@ export const Application = () => {
                         <p
                           style={{
                             fontWeight: "600",
-
+                            fontSize: "24px",
                             lineHeight: "29.26px",
                             color: "#414142",
                             height: "58px",
@@ -405,7 +405,7 @@ export const Application = () => {
                         <p
                           style={{
                             fontWeight: "600",
-
+                            fontSize: "24px",
                             lineHeight: "24px",
                             textAlign: "justify",
                             color: "#414142",
