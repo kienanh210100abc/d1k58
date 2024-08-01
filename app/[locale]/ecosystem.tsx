@@ -13,7 +13,7 @@ export function Ecosystem() {
   const { t } = useTranslation();
   return (
     <section id="ecosystem">
-      <Stack style={{ padding: "20px" }}>
+      <Stack>
         <Container>
           <Grid mt="80px">
             <h1

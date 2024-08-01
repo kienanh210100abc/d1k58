@@ -19,6 +19,7 @@ export const Procedure = () => {
           <Grid mt="80px">
             <h1
               style={{
+                lineHeight: "30px",
                 textAlign: "center",
                 fontWeight: "600",
                 fontSize: "32px",
@@ -35,7 +36,6 @@ export const Procedure = () => {
                   width="100%"
                   justifyContent="center"
                   pt="5%"
-                  px="10%"
                 >
                   <img src={img.src} alt="bg" height="100%" width="100%" />
                 </Stack>
@@ -47,14 +47,13 @@ export const Procedure = () => {
                   width="100%"
                   justifyContent="center"
                   pt="5%"
-                  px="5%"
                 >
                   <Box
                     fontWeight="500"
                     color="black"
                     width="100%"
-                    px="10%"
                     sx={{
+                      paddingLeft: { xs: "none", md: "30px", lg: "30px" },
                       fontSize: {
                         xs: "16px",
                         sm: "16px",
@@ -102,8 +101,8 @@ export const Procedure = () => {
                     fontWeight="500"
                     color="black"
                     width="100%"
-                    px="10%"
                     sx={{
+                      paddingLeft: { xs: "none", md: "30px", lg: "30px" },
                       fontSize: {
                         xs: "16px",
                         sm: "16px",
@@ -151,8 +150,8 @@ export const Procedure = () => {
                     fontWeight="500"
                     color="black"
                     width="100%"
-                    px="10%"
                     sx={{
+                      paddingLeft: { xs: "none", md: "30px", lg: "30px" },
                       fontSize: {
                         xs: "16px",
                         sm: "16px",
@@ -200,8 +199,8 @@ export const Procedure = () => {
                     fontWeight="500"
                     color="black"
                     width="100%"
-                    px="10%"
                     sx={{
+                      paddingLeft: { xs: "none", md: "30px", lg: "30px" },
                       fontSize: {
                         xs: "16px",
                         sm: "16px",

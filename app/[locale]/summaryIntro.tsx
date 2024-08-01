@@ -12,7 +12,6 @@ export const SummaryIntro = () => {
       <Stack component="section" id="summaryIntro" sx={{ mt: "90px" }}>
         <Container>
           <Grid
-            // mt="80px"
             container
             sx={{
               flexDirection: {
@@ -33,7 +32,6 @@ export const SummaryIntro = () => {
                   fontWeight="600"
                   color="#00A64F"
                   width="100%"
-                  px="6vh"
                   sx={{
                     fontSize: {
                       xs: "32px",
@@ -49,7 +47,7 @@ export const SummaryIntro = () => {
                   fontWeight="500"
                   color="#393939"
                   width="100%"
-                  px="6vh"
+                  // px="6vh"
                   align="justify"
                   sx={{
                     fontSize: {
@@ -71,7 +69,7 @@ export const SummaryIntro = () => {
                   fontWeight="500"
                   color="#393939"
                   width="100%"
-                  px="6vh"
+                  // px="6vh"
                   align="justify"
                   sx={{
                     fontSize: {
@@ -92,7 +90,7 @@ export const SummaryIntro = () => {
                   fontWeight="500"
                   color="#393939"
                   width="100%"
-                  px="6vh"
+                  // px="6vh"
                   align="justify"
                 >
                   <Button

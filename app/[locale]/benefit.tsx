@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import backgroundBenefit from '@/assets/backgroundBenefit.svg';
-import checkboxTXL from '@/assets/checkboxTXL.svg';
-import { Grid, Typography } from '@mui/material';
-import { Box, Container, Stack } from '@mui/system';
-import { useTranslation } from 'react-i18next';
+import backgroundBenefit from "@/assets/backgroundBenefit.svg";
+import checkboxTXL from "@/assets/checkboxTXL.svg";
+import { Grid, Typography } from "@mui/material";
+import { Box, Container, Stack } from "@mui/system";
+import { useTranslation } from "react-i18next";
 
 export const Benefit = () => {
   const { t } = useTranslation();
@@ -15,13 +15,13 @@ export const Benefit = () => {
       className="home__automation-integration"
       style={{
         backgroundImage: `url(${backgroundBenefit.src})`,
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
       }}
     >
       <Container>
-        <Grid mt="80px" container height={'100%'}>
+        <Grid mt="80px" container height={"100%"}>
           <Grid item xs={12} sm={12} md={6}>
             <Stack
               alignItems="start"
@@ -33,28 +33,31 @@ export const Benefit = () => {
                 fontWeight="600"
                 color="white"
                 width="100%"
-                px="10%"
                 sx={{
+                  marginTop: {
+                    xs: "50px",
+                    md: "none",
+                    lg: "none",
+                  },
                   fontSize: {
-                    xs: '32px',
-                    sm: '32px',
-                    lg: '32px',
+                    xs: "32px",
+                    sm: "32px",
+                    lg: "32px",
                   },
                 }}
               >
-                {t('benefit.title')}
+                {t("benefit.title")}
               </Typography>
               <br />
               <Box
                 fontWeight="500"
                 color="white"
                 width="100%"
-                px="10%"
                 sx={{
                   fontSize: {
-                    xs: '16px',
-                    sm: '16px',
-                    lg: '18px',
+                    xs: "16px",
+                    sm: "16px",
+                    lg: "18px",
                   },
                 }}
               >
@@ -64,7 +67,7 @@ export const Benefit = () => {
                     alt="bg"
                     width="24px"
                     height="24px"
-                    style={{ marginRight: '8px', marginTop: '4px' }}
+                    style={{ marginRight: "8px", marginTop: "4px" }}
                   />
                   <Box>
                     <Typography
@@ -72,15 +75,15 @@ export const Benefit = () => {
                       lineHeight="26.82px"
                       sx={{
                         fontSize: {
-                          xs: '20px',
-                          lg: '22px',
+                          xs: "20px",
+                          lg: "22px",
                         },
                       }}
                     >
-                      {t('benefit.text1')}
+                      {t("benefit.text1")}
                     </Typography>
                     <Typography fontWeight="400" fontSize="16px">
-                      {t('benefit.text2')}
+                      {t("benefit.text2")}
                     </Typography>
                   </Box>
                 </Box>
@@ -92,13 +95,12 @@ export const Benefit = () => {
                 fontWeight="500"
                 color="white"
                 width="100%"
-                px="10%"
                 // align="justify"
                 sx={{
                   fontSize: {
-                    xs: '16px',
-                    sm: '16px',
-                    lg: '18px',
+                    xs: "16px",
+                    sm: "16px",
+                    lg: "18px",
                   },
                 }}
               >
@@ -108,7 +110,7 @@ export const Benefit = () => {
                     alt="bg"
                     width="24px"
                     height="24px"
-                    style={{ marginRight: '8px', marginTop: '4px' }}
+                    style={{ marginRight: "8px", marginTop: "4px" }}
                   />
                   <Box>
                     <Typography
@@ -116,15 +118,15 @@ export const Benefit = () => {
                       lineHeight="26.82px"
                       sx={{
                         fontSize: {
-                          xs: '20px',
-                          lg: '22px',
+                          xs: "20px",
+                          lg: "22px",
                         },
                       }}
                     >
-                      {t('benefit.text3')}
+                      {t("benefit.text3")}
                     </Typography>
                     <Typography fontWeight="400" fontSize="16px">
-                      {t('benefit.text4')}
+                      {t("benefit.text4")}
                     </Typography>
                   </Box>
                 </Box>
@@ -135,13 +137,12 @@ export const Benefit = () => {
                 fontWeight="500"
                 color="white"
                 width="100%"
-                px="10%"
                 // align="justify"
                 sx={{
                   fontSize: {
-                    xs: '16px',
-                    sm: '16px',
-                    lg: '18px',
+                    xs: "16px",
+                    sm: "16px",
+                    lg: "18px",
                   },
                 }}
               >
@@ -151,7 +152,7 @@ export const Benefit = () => {
                     alt="bg"
                     width="24px"
                     height="24px"
-                    style={{ marginRight: '8px', marginTop: '4px' }}
+                    style={{ marginRight: "8px", marginTop: "4px" }}
                   />
                   <Box>
                     <Typography
@@ -159,15 +160,15 @@ export const Benefit = () => {
                       lineHeight="26.82px"
                       sx={{
                         fontSize: {
-                          xs: '20px',
-                          lg: '22px',
+                          xs: "20px",
+                          lg: "22px",
                         },
                       }}
                     >
-                      {t('benefit.text5')}
+                      {t("benefit.text5")}
                     </Typography>
                     <Typography fontWeight="400" fontSize="16px">
-                      {t('benefit.text6')}
+                      {t("benefit.text6")}
                     </Typography>
                   </Box>
                 </Box>
@@ -181,19 +182,19 @@ export const Benefit = () => {
             sm={12}
             md={6}
             sx={{
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-              padding: '30px',
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              padding: "30px",
               width: {
-                lg: '611px',
-                sm: '611px',
-                xs: '350px',
+                lg: "611px",
+                sm: "611px",
+                xs: "350px",
               },
               height: {
-                lg: '405px',
-                sm: '405px',
-                xs: '232px',
+                lg: "405px",
+                sm: "405px",
+                xs: "232px",
               },
             }}
           >
@@ -203,7 +204,7 @@ export const Benefit = () => {
               src="https://www.youtube.com/embed/9q14JNH6CHU"
               title="YouTube video player"
               style={{
-                borderRadius: '30px',
+                borderRadius: "30px",
               }}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen

@@ -1,13 +1,13 @@
-'use client';
+"use client";
 
-import { Container, Grid, Typography } from '@mui/material';
-import { useTranslation } from 'react-i18next';
+import { Container, Grid, Typography } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
-import iconART from '@/assets/iconART.svg';
-import iconQR from '@/assets/iconQR.svg';
-import iconTemplate from '@/assets/iconTemplate.svg';
+import iconART from "@/assets/iconART.svg";
+import iconQR from "@/assets/iconQR.svg";
+import iconTemplate from "@/assets/iconTemplate.svg";
 
-import { Box } from '@mui/system';
+import { Box } from "@mui/system";
 
 export const Feature = () => {
   const { t } = useTranslation();
@@ -18,26 +18,25 @@ export const Feature = () => {
           <Grid mt="80px">
             <h1
               style={{
-                textAlign: 'center',
-                fontWeight: '600',
-                fontSize: '32px',
-                color: 'black',
+                textAlign: "center",
+                fontWeight: "600",
+                fontSize: "32px",
+                color: "black",
               }}
             >
-              {t('feature.title')}
+              {t("feature.title")}
             </h1>
             <Grid container item xs={12} sm={12} md={12}>
               <Grid item xs={12} sm={12} md={4}>
                 <Box
                   fontWeight="500"
                   color="black"
-                  width="100%"
-                  px="10%"
+                  width="95%"
                   sx={{
                     fontSize: {
-                      xs: '16px',
-                      sm: '16px',
-                      lg: '16px',
+                      xs: "16px",
+                      sm: "16px",
+                      lg: "16px",
                     },
                   }}
                 >
@@ -47,7 +46,7 @@ export const Feature = () => {
                       alt="bg"
                       width="80px"
                       height="80px"
-                      style={{ marginRight: '8px', marginTop: '4px' }}
+                      style={{ marginRight: "8px", marginTop: "4px" }}
                     />
                   </Box>
                   <br />
@@ -57,20 +56,20 @@ export const Feature = () => {
                       lineHeight="29.26px"
                       sx={{
                         fontSize: {
-                          xs: '22px',
-                          lg: '24px',
+                          xs: "22px",
+                          lg: "24px",
                         },
                       }}
                     >
-                      {t('feature.title1')}{' '}
+                      {t("feature.title1")}{" "}
                     </Typography>
                     <br />
                     <Typography
                       fontWeight="400"
                       fontSize="16px"
-                      style={{ textAlign: 'justify' }}
+                      style={{ textAlign: "justify" }}
                     >
-                      {t('feature.content1')}{' '}
+                      {t("feature.content1")}{" "}
                     </Typography>
                   </Box>
                 </Box>
@@ -79,13 +78,12 @@ export const Feature = () => {
                 <Box
                   fontWeight="500"
                   color="black"
-                  width="100%"
-                  px="10%"
+                  width="95%"
                   sx={{
                     fontSize: {
-                      xs: '16px',
-                      sm: '16px',
-                      lg: '16px',
+                      xs: "16px",
+                      sm: "16px",
+                      lg: "16px",
                     },
                   }}
                 >
@@ -95,7 +93,7 @@ export const Feature = () => {
                       alt="bg"
                       width="80px"
                       height="80px"
-                      style={{ marginRight: '8px', marginTop: '4px' }}
+                      style={{ marginRight: "8px", marginTop: "4px" }}
                     />
                   </Box>
                   <br />
@@ -105,20 +103,20 @@ export const Feature = () => {
                       lineHeight="29.26px"
                       sx={{
                         fontSize: {
-                          xs: '22px',
-                          lg: '24px',
+                          xs: "22px",
+                          lg: "24px",
                         },
                       }}
                     >
-                      {t('feature.title2')}{' '}
+                      {t("feature.title2")}{" "}
                     </Typography>
                     <br />
                     <Typography
                       fontWeight="400"
                       fontSize="16px"
-                      style={{ textAlign: 'justify' }}
+                      style={{ textAlign: "justify" }}
                     >
-                      {t('feature.content2')}{' '}
+                      {t("feature.content2")}{" "}
                     </Typography>
                   </Box>
                 </Box>
@@ -127,13 +125,12 @@ export const Feature = () => {
                 <Box
                   fontWeight="500"
                   color="black"
-                  width="100%"
-                  px="10%"
+                  width="95%"
                   sx={{
                     fontSize: {
-                      xs: '16px',
-                      sm: '16px',
-                      lg: '16px',
+                      xs: "16px",
+                      sm: "16px",
+                      lg: "16px",
                     },
                   }}
                 >
@@ -143,7 +140,7 @@ export const Feature = () => {
                       alt="bg"
                       width="80px"
                       height="80px"
-                      style={{ marginRight: '8px', marginTop: '4px' }}
+                      style={{ marginRight: "8px", marginTop: "4px" }}
                     />
                   </Box>
                   <br />
@@ -153,20 +150,20 @@ export const Feature = () => {
                       lineHeight="29.26px"
                       sx={{
                         fontSize: {
-                          xs: '22px',
-                          lg: '24px',
+                          xs: "22px",
+                          lg: "24px",
                         },
                       }}
                     >
-                      {t('feature.title3')}
+                      {t("feature.title3")}
                     </Typography>
                     <br />
                     <Typography
                       fontWeight="400"
                       fontSize="16px"
-                      style={{ textAlign: 'justify' }}
+                      style={{ textAlign: "justify" }}
                     >
-                      {t('feature.content3')}
+                      {t("feature.content3")}
                     </Typography>
                   </Box>
                 </Box>
