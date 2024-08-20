@@ -201,7 +201,7 @@ export const Benefit = () => {
             <iframe
               width="90%"
               height="100%"
-              src="https://www.youtube.com/embed/9q14JNH6CHU"
+              src={t("benefit.video")}
               title="YouTube video player"
               style={{
                 borderRadius: "30px",
