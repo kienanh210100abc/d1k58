@@ -1,7 +1,6 @@
 import "@/styles/global.scss";
 import { Montserrat } from "next/font/google";
 import { ReactNode } from "react";
-import { Analytics } from "./analytics";
 
 const montserat = Montserrat({
   subsets: ["latin"],
@@ -14,7 +13,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html>
       <body className={montserat.className}>
         {children}
-        <Analytics />
       </body>
     </html>
   );

@@ -19,7 +19,7 @@ export async function generateMetadata({
   const { t } = await initTranslations(params.locale);
   const basePath = process.env.BASE_PATH || "";
   return {
-    metadataBase: new URL(`https://light.traxem.vn${basePath}`),
+    metadataBase: new URL(`https://d1k58`),
     alternates: {
       canonical: "/",
       languages: i18nConfig.locales.reduce((prev, lang) => {
@@ -27,29 +27,22 @@ export async function generateMetadata({
         return prev;
       }, {} as Record<string, string>),
     },
-    icons: `${basePath}/favicon.svg`,
+    // icons: `${basePath}/favicon.svg`,
     keywords: [
-      "TraXem",
-      "minh bạch",
-      "công khai",
-      "tra cứu bằng QR",
-      "thông tin bằng QR",
-      "nguồn gốc",
-      "xuất xứ",
-      "công khai nguồn gốc xuất xứ",
+      "D1k58",
     ],
     title: t("common.text.title"),
     description: t("common.text.description"),
     openGraph: {
-      images: [`/meta/${params.locale}/banner.png`],
+      // images: [`/meta/${params.locale}/banner.png`],
       type: "website",
-      url: `https://light.traxem.vn${basePath}/${params.locale}`,
+      url: `https://d1k58`,
       title: t("common.text.title"),
       description: t("common.text.description"),
     },
     twitter: {
-      images: [`/meta/${params.locale}/banner.png`],
-      creator: "vsii",
+      // images: [`/meta/${params.locale}/banner.png`],
+      creator: "ka",
       title: t("common.text.title"),
       description: t("common.text.description"),
     },

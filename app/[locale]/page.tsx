@@ -1,13 +1,8 @@
 import { TranslationProvider } from "@/components";
 import initTranslations from "../i18n";
-import { SummaryIntro } from "./summaryIntro";
-import { Contact } from "./contact";
-import { Feature } from "./feature";
 import { Benefit } from "./benefit";
-import { PriceList } from "./price-list";
-import { Application } from "./application";
-import { Ecosystem } from "./ecosystem";
-import { Procedure } from "./procedure";
+import { Contact } from "./contact";
+import { SummaryIntro } from "./summaryIntro";
 
 async function Home({ params: { locale } }: { params: { locale: string } }) {
   const { resources } = await initTranslations(locale);
@@ -17,11 +12,10 @@ async function Home({ params: { locale } }: { params: { locale: string } }) {
       <main>
         <SummaryIntro />
         <Benefit />
-        <Feature />
-        <Procedure />
-        <Application />
-        <PriceList />
-        <Ecosystem />
+        {/* <Procedure /> */}
+        {/* <Application /> */}
+        {/* <PriceList /> */}
+        {/* <Ecosystem /> */}
         <Contact />
       </main>
     </TranslationProvider>

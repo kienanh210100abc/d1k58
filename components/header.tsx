@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
@@ -21,7 +22,9 @@ import { usePathname, useRouter } from "next/navigation";
 import React, { ReactElement, useState } from "react";
 import { useTranslation } from "react-i18next";
 import menuTXL from "../assets/MenuTXL.svg";
-import { Logo } from "./icons";
+// import { Logo } from "./icons";
+import LogoD1 from "@/assets/LogoD1.svg";
+
 // elevation scroll
 interface ElevationScrollProps {
   children: ReactElement;
@@ -50,42 +53,6 @@ function ElevationScroll({ children, window }: ElevationScrollProps) {
     },
   });
 }
-
-const Language = () => {
-  const { i18n } = useTranslation();
-  const currentLocale = i18n.language;
-  const router = useRouter();
-  const currentPathname = usePathname();
-
-  const handleChangeLanguage = () => {
-    const language = currentLocale === "vi" ? "en" : "vi";
-    router.push(
-      currentPathname.startsWith(`/${currentLocale}`) || currentPathname === "/"
-        ? "/" + language + currentPathname.replace(`/${currentLocale}`, "")
-        : currentPathname.replace(`/${currentLocale}`, `/${language}`)
-    );
-  };
-  return (
-    <Button
-      sx={{
-        background: "white",
-        marginRight: "10px",
-        color: "#00A64F",
-        padding: "0px 14px",
-        borderRadius: "10px",
-        border: "1px solid #00A64F",
-        height: "35px",
-        display: "inline-flex",
-        "@media (max-width: 442px)": {
-          display: "none",
-        },
-      }}
-      onClick={handleChangeLanguage}
-    >
-      {currentLocale === "vi" ? "Vi" : "En"} <KeyboardArrowDownIcon />
-    </Button>
-  );
-};
 
 // ==============================|| MINIMAL LAYOUT APP BAR ||============================== //
 export const Header = ({ ...others }) => {
@@ -116,10 +83,6 @@ export const Header = ({ ...others }) => {
   const nav = [
     { id: "summaryIntro", name: t("menu.introduction"), key: 0 },
     { id: "benefit", name: t("menu.benefit"), key: 1 },
-    { id: "feature", name: t("menu.feature"), key: 2 },
-    { id: "procedure", name: t("menu.procedure"), key: 3 },
-    { id: "price", name: t("menu.priceList"), key: 4 },
-    { id: "contact", name: t("menu.contact"), key: 5 },
   ];
 
   return (
@@ -132,28 +95,9 @@ export const Header = ({ ...others }) => {
             justifyContent="space-between"
             width="100%"
             mx="15px"
-          >
-            <Typography
-              sx={{
-                display: {
-                  xs: "none",
-                  sm: "block",
-                },
-              }}
-            >
-              <Logo />
-            </Typography>
-            <Typography
-              sx={{
-                display: {
-                  xs: "block",
-                  sm: "none",
-                  // padding: "10px 0",
-                },
-              }}
-            >
-              <Logo />
-            </Typography>
+       >
+            <img src={LogoD1.src} alt="bg" width="250px" height="50px"   />
+            
             <Stack
               direction="row"
               sx={{
@@ -182,54 +126,8 @@ export const Header = ({ ...others }) => {
                 </Button>
               ))}
             </Stack>
-            <Stack
-              direction="row"
-              sx={{
-                display: { xs: "block", lg: "none" },
-                "@media (min-width: 1303px)": { display: "block" },
-                "@media (max-width: 1303px)": { display: "none" },
-              }}
-            >
-              <Button
-                onClick={() =>
-                  window.open(
-                    `${process.env.NEXT_PUBLIC_ROUTER}/register`,
-                    "_blank"
-                  )
-                }
-                sx={{
-                  borderRadius: "10px",
-                  padding: "5px 15px",
-                  background: "white",
-                  color: "#00A64F",
-                  border: "1px solid #00A64F",
-                  textTransform: "none",
-                }}
-              >
-                {t("menu.register")}
-              </Button>
-              <Button
-                onClick={() =>
-                  window.open(
-                    `${process.env.NEXT_PUBLIC_ROUTER}/login`,
-                    "_blank"
-                  )
-                }
-                sx={{
-                  borderRadius: "10px",
-                  color: "white",
-                  padding: "5px 14px",
-                  background: "#00A64F",
-                  marginLeft: "10px",
-                  ":hover": { background: "#00A64F", color: "white" },
-                  textTransform: "none",
-                }}
-              >
-                {t("menu.login")}
-              </Button>
-            </Stack>
+            <Stack></Stack>
           </Stack>
-          <Language />
 
           <Box
             sx={{
@@ -250,8 +148,13 @@ export const Header = ({ ...others }) => {
               onClick={drawerToggler(true)}
               size="large"
             >
-              {/* <MenuIcon /> */}
-              <img src={menuTXL.src} alt="menuTXL" />
+              <img
+                src={menuTXL.src}
+                alt="bg"
+                width="30px"
+                height="30px"
+                style={{ marginRight: "8px", marginTop: "4px" }}
+              />
             </IconButton>
             <Drawer
               anchor="top"
@@ -319,34 +222,6 @@ export const Header = ({ ...others }) => {
                     >
                       <ListItemButton component="a">
                         <ListItemText primary={t("menu.contact")} />
-                      </ListItemButton>
-                    </Link>
-                    <Link
-                      style={{ textDecoration: "none" }}
-                      onClick={() =>
-                        window.open(
-                          `${process.env.NEXT_PUBLIC_ROUTER}/login`,
-                          "_blank"
-                        )
-                      }
-                      target="_blank"
-                    >
-                      <ListItemButton component="a">
-                        <ListItemText primary={t("menu.login")} />
-                      </ListItemButton>
-                    </Link>
-                    <Link
-                      style={{ textDecoration: "none" }}
-                      onClick={() =>
-                        window.open(
-                          `${process.env.NEXT_PUBLIC_ROUTER}/register`,
-                          "_blank"
-                        )
-                      }
-                      target="_blank"
-                    >
-                      <ListItemButton component="a">
-                        <ListItemText primary={t("menu.register")} />
                       </ListItemButton>
                     </Link>
                   </List>

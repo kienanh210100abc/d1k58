@@ -1,13 +1,13 @@
 {
   "common": {
     "text": {
-      "title": "TraXem Light - Minh bạch và tra cứu thông tin bằng mã QR",
-      "description": "TraXem Light là một giải pháp tạo ra sự minh bạch xuyên suốt qua QR code trên thiết bị di động. Mục tiêu hàng đầu của TraXem Light là truyền tải thông tin của sản phẩm, mang lại sự tin cậy giữa nhà sản xuất, doanh nghiệp và người tiêu dùng. Doanh nghiệp có thể dễ dàng công khai nguồn gốc xuất xứ, quy trình sản xuất và các thông tin hữu ích khác của sản phẩm và lưu trữ trong một mã QR đơn giản. Từ đó giúp người tiêu dùng dễ dàng truy cập thông tin sản phẩm nhờ thao tác quét mã QR bằng camera của điện thoại."
+      "title": "D1-K58: Số 1 Yên Bái",
+      "description": "1 trang web đơn giản chứa đựng chút kỉ niệm tuổi trẻ hehehe"
     }
   },
   "menu": {
     "introduction": "Giới thiệu",
-    "benefit": "Lợi ích",
+    "benefit": "Kỉ niệm",
     "feature": "Tính năng nổi bật",
     "procedure": "Quy trình",
     "priceList": "Bảng giá",
@@ -16,24 +16,22 @@
     "login": "Đăng nhập"
   },
   "summaryIntro": {
-    "title": "An tâm tiêu dùng, thông tin minh bạch ",
-    "text1": "TraXem Light là một giải pháp tạo ra sự ",
-    "text2": "minh bạch xuyên suốt qua QR code trên thiết bị di động.",
-    "text3": " Mục tiêu hàng đầu của TraXem Light là truyền tải thông tin của sản phẩm, mang lại sự tin cậy giữa nhà sản xuất, doanh nghiệp và người tiêu dùng.",
-    "text4": "Doanh nghiệp có thể dễ dàng",
-    "text5": " công khai nguồn gốc xuất xứ, quy trình sản xuất và các thông tin hữu ích khác của sản phẩm và lưu trữ trong một mã QR đơn giản",
-    "text6": ". Từ đó giúp người tiêu dùng dễ dàng truy cập thông tin sản phẩm nhờ thao tác quét mã QR bằng camera của điện thoại.",
+    "title": "D1-K58: Số 1 Yên Bái",
+    "text1": "Đây là lớp đẳng cấp số 1 Yên Bái, mỗi tội nằm tít trên cao, đi học leo cầu thang hơi mệt, đi học muộn thì thôi, chấm hết.",
+    "text2": " Hy vọng mỗi khi các cậu vào trang web này ( hoặc không =)) ) sẽ nhớ về lại những năm tháng tuổi học trò của chúng mình. ",
     "btn": "Trải nghiệm ngay"
   },
   "benefit": {
-    "title": "Lợi ích sử dụng",
-    "text1": "Triển khai nhanh",
-    "text2": "Thiết lập nhanh chóng, không cần kỹ thuật phức tạp.",
-    "text3": "Minh bạch thông tin",
-    "text4": "Thông qua QR code, thông tin sản phẩm dễ dàng được chia sẻ với người tiêu dùng.",
-    "text5": "Tăng độ tin cậy",
-    "text6": "Giúp tăng cường mức độ tin cậy của sản phẩm thông qua việc chứng minh nguồn gốc xuất xứ, quy trình sản xuất và các thông tin hữu ích khác.",
-    "video": "https://www.youtube.com/embed/9q14JNH6CHU"
+    "title": "Video về D1-K58",
+    "text1": "Chào các bạn",
+    "text2": "Đây là video mình lấy từ youtube của Bảo, mong Bảo không đánh bản quyền mình, cảm ơn Bảo vì đã tổng hợp lại những dịp đặc biệt để có được chiếc video ngắn này. Cùng nhau xem lại chút kỉ niệm của lớp mình nhé ",
+    "video": "https://www.youtube.com/embed/ZRybM-3KktQ?si=zjgrlrBnMoVo-x8K",
+    "title2": "Ngây Ngô nè",
+    "text3": "Ca khúc Ngây Ngô được thực hiện bởi nam ca sĩ Nguyễn Minh Đức (Đức Cớp) và rapper Đặng Đức Lương (Lương Lợn) để dành tặng cho các bạn nữ D1-K58",
+    "video2": "https://www.youtube.com/embed/6xlzaAl6cJQ?si=AKbAteHpb5pw0csl",
+    "video3": "https://www.youtube.com/embed/EObDVSXUZEo?si=FUY8kG2MMCyRb4Sr",
+    "title3": "Tổ chức Trung thu tại ",
+    "title4": "Bệnh viện Sản - Nhi Yên Bái"
   },
   "feature": {
     "title": "Tính năng nổi bật",
@@ -118,30 +116,11 @@
     "infor-safe-ct": "Mã QR của TraXem Light được sử dụng để cung cấp các thông tin chi tiết của các đơn vị nhà hàng, khách sạn, nơi cung cấp dịch vụ như một website. QR có thể được gắn trong các ấn phẩm, thực đơn, mạng xã hội doanh nghiệp giúp tăng hiệu quả truyền thông."
   },
   "contact": {
-    "contact_h1": "Chúng tôi đang sẵn sàng hỗ trợ và tư vấn",
-    "contact_ct1": "Rất cảm ơn sự quan tâm của bạn đến sản phẩm TraXem Light. ",
-    "contact_ct2": " Chúng tôi sẽ liên hệ lại bạn trong thời gian sớm nhất.",
-    "contact_h2": "Có thể bạn quan tâm",
-    "contact_company": "CÔNG TY CỔ PHẦN PHẦN MỀM VIỆT QUỐC TẾ",
-    "contact_mst": " Mã số thuế:",
-    "contact_mst2": "0102029449",
-    "contact_address": "Địa chỉ:",
-    "contact_address2": "Tầng 3 CenXspace, Tháp 3 - 4, Tòa nhà Dolphin Plaza, số 28 Trần Bình, Phường Mỹ Đình 2, Quận Nam Từ Liêm, Thành Phố Hà Nội, Việt Nam",
-    "contact_phone": "Hotline:",
-    "contact_phone2": "(+84) 24 3 728 0366",
-    "contact_email": "Email:",
-    "contact_email2": "contact@vsi-international.com",
-    "contact_btn": "Gửi yêu cầu",
-    "contact_success": "Cảm ơn bạn đã quan tâm đến TraXemLight.\nChúng tôi sẽ liên hệ trong thời gian sớm nhất.",
-    "contact_failed": "Gửi liên hệ không thành công. Vui lòng thử lại.",
-    "lb_fullname": "Họ và tên",
-    "lb_phone": "Số điện thoại",
-    "lb_email": "Email",
-    "messenger": "Tin nhắn",
-    "lb_messenger": "Nội dung tin nhắn",
-    "lb_captcha": "Mã kiểm tra"
+    "contact_h1": "Nếu cần góp ý hay chỉnh sửa gì thì các bạn cứ liên hệ cho tớ nhé.",
+    "contact_h2": " Cảm ơn chúng mình vì đã góp phần làm cho thanh xuân của nhau trở nên tươi đẹp.",
+    "contact_h3": " Mãi yêu các bạn "
   },
   "footer": {
-    "footer": "© 2024 VSII. Copyright and all rights reserved"
+    "footer": "D1-K58 Mãi đỉnh"
   }
 }
