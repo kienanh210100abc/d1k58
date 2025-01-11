@@ -102,8 +102,8 @@ export const Header = ({ ...others }) => {
               direction="row"
               sx={{
                 display: { xs: "none", lg: "block" },
-                "@media (min-width: 1303px)": { display: "block" },
-                "@media (max-width: 1303px)": { display: "none" },
+                "@media (min-width: 520px)": { display: "block" },
+                "@media (max-width: 520px)": { display: "none" },
               }}
               spacing={2}
             >
@@ -135,10 +135,10 @@ export const Header = ({ ...others }) => {
                 xs: "block",
                 lg: "none",
               },
-              "@media (max-width: 1303px)": {
+              "@media (max-width: 520px)": {
                 display: "block",
               },
-              "@media (min-width: 1303px)": {
+              "@media (min-width: 520px)": {
                 display: "none",
               },
             }}
@@ -187,43 +187,7 @@ export const Header = ({ ...others }) => {
                         <ListItemText primary={t("menu.benefit")} />
                       </ListItemButton>
                     </Link>
-                    <Link
-                      style={{ textDecoration: "none" }}
-                      onClick={() => handleScrollToSection("feature")}
-                      target="_blank"
-                    >
-                      <ListItemButton component="a">
-                        <ListItemText primary={t("menu.feature")} />
-                      </ListItemButton>
-                    </Link>
-                    <Link
-                      style={{ textDecoration: "none" }}
-                      onClick={() => handleScrollToSection("procedure")}
-                      target="_blank"
-                    >
-                      <ListItemButton component="a">
-                        <ListItemText primary={t("menu.procedure")} />
-                      </ListItemButton>
-                    </Link>
-                    <Link
-                      style={{ textDecoration: "none" }}
-                      onClick={() => handleScrollToSection("price")}
-                      target="_blank"
-                    >
-                      <ListItemButton component="a">
-                        <ListItemText primary={t("menu.priceList")} />
-                      </ListItemButton>
-                    </Link>
-
-                    <Link
-                      style={{ textDecoration: "none" }}
-                      onClick={() => handleScrollToSection("contact")}
-                      target="_blank"
-                    >
-                      <ListItemButton component="a">
-                        <ListItemText primary={t("menu.contact")} />
-                      </ListItemButton>
-                    </Link>
+                    
                   </List>
                 </Box>
               )}
