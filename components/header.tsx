@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import {
   Box,
   Button,
@@ -18,11 +17,9 @@ import {
   useScrollTrigger,
 } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
-import { usePathname, useRouter } from "next/navigation";
 import React, { ReactElement, useState } from "react";
 import { useTranslation } from "react-i18next";
 import menuTXL from "../assets/MenuTXL.svg";
-// import { Logo } from "./icons";
 import LogoD1 from "@/assets/LogoD1.svg";
 
 // elevation scroll
@@ -83,6 +80,9 @@ export const Header = ({ ...others }) => {
   const nav = [
     { id: "summaryIntro", name: t("menu.introduction"), key: 0 },
     { id: "benefit", name: t("menu.benefit"), key: 1 },
+    { id: "procedure", name: t("menu.procedure"), key: 3 },
+    { id: "application", name: t("menu.application"), key: 3 },
+
   ];
 
   return (
