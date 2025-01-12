@@ -78,7 +78,7 @@ export const Application = () => {
                     item
                     xs={12}
                     sm={12}
-                    md={3}
+                    md={4}
                     sx={{
                       "@media (max-width: 995px)": {
                         flexBasis: "100%",
@@ -143,7 +143,7 @@ export const Application = () => {
                     item
                     xs={12}
                     sm={12}
-                    md={3}
+                    md={4}
                     sx={{
                       "@media (max-width: 995px)": {
                         flexBasis: "100%",
@@ -208,7 +208,7 @@ export const Application = () => {
                     item
                     xs={12}
                     sm={12}
-                    md={3}
+                    md={4}
                     sx={{
                       "@media (max-width: 995px)": {
                         flexBasis: "100%",
@@ -273,7 +273,7 @@ export const Application = () => {
                     item
                     xs={12}
                     sm={12}
-                    md={3}
+                    md={4}
                     sx={{
                       "@media (max-width: 995px)": {
                         flexBasis: "100%",
@@ -339,7 +339,7 @@ export const Application = () => {
                     item
                     xs={12}
                     sm={12}
-                    md={3}
+                    md={4}
                     sx={{
                       "@media (max-width: 995px)": {
                         flexBasis: "100%",
@@ -404,7 +404,7 @@ export const Application = () => {
                     item
                     xs={12}
                     sm={12}
-                    md={3}
+                    md={4}
                     sx={{
                       "@media (max-width: 995px)": {
                         flexBasis: "100%",
@@ -469,7 +469,7 @@ export const Application = () => {
                     item
                     xs={12}
                     sm={12}
-                    md={3}
+                    md={4}
                     sx={{
                       "@media (max-width: 995px)": {
                         flexBasis: "100%",
@@ -534,7 +534,7 @@ export const Application = () => {
                     item
                     xs={12}
                     sm={12}
-                    md={3}
+                    md={4}
                     sx={{
                       "@media (max-width: 995px)": {
                         flexBasis: "100%",
@@ -599,7 +599,7 @@ export const Application = () => {
                     item
                     xs={12}
                     sm={12}
-                    md={3}
+                    md={4}
                     sx={{
                       "@media (max-width: 995px)": {
                         flexBasis: "100%",
@@ -664,7 +664,7 @@ export const Application = () => {
                     item
                     xs={12}
                     sm={12}
-                    md={3}
+                    md={4}
                     sx={{
                       "@media (max-width: 995px)": {
                         flexBasis: "100%",
@@ -729,7 +729,7 @@ export const Application = () => {
                     item
                     xs={12}
                     sm={12}
-                    md={3}
+                    md={4}
                     sx={{
                       "@media (max-width: 995px)": {
                         flexBasis: "100%",
@@ -794,7 +794,7 @@ export const Application = () => {
                     item
                     xs={12}
                     sm={12}
-                    md={3}
+                    md={4}
                     sx={{
                       "@media (max-width: 995px)": {
                         flexBasis: "100%",
@@ -859,7 +859,7 @@ export const Application = () => {
                     item
                     xs={12}
                     sm={12}
-                    md={3}
+                    md={4}
                     sx={{
                       "@media (max-width: 995px)": {
                         flexBasis: "100%",
@@ -924,7 +924,7 @@ export const Application = () => {
                     item
                     xs={12}
                     sm={12}
-                    md={3}
+                    md={4}
                     sx={{
                       "@media (max-width: 995px)": {
                         flexBasis: "100%",
@@ -989,7 +989,7 @@ export const Application = () => {
                     item
                     xs={12}
                     sm={12}
-                    md={3}
+                    md={4}
                     sx={{
                       "@media (max-width: 995px)": {
                         flexBasis: "100%",
@@ -1054,7 +1054,7 @@ export const Application = () => {
                     item
                     xs={12}
                     sm={12}
-                    md={3}
+                    md={4}
                     sx={{
                       "@media (max-width: 995px)": {
                         flexBasis: "100%",
@@ -1119,7 +1119,7 @@ export const Application = () => {
                     item
                     xs={12}
                     sm={12}
-                    md={3}
+                    md={4}
                     sx={{
                       "@media (max-width: 995px)": {
                         flexBasis: "100%",
@@ -1184,7 +1184,7 @@ export const Application = () => {
                     item
                     xs={12}
                     sm={12}
-                    md={3}
+                    md={4}
                     sx={{
                       "@media (max-width: 995px)": {
                         flexBasis: "100%",
@@ -1249,7 +1249,7 @@ export const Application = () => {
                     item
                     xs={12}
                     sm={12}
-                    md={3}
+                    md={4}
                     sx={{
                       "@media (max-width: 995px)": {
                         flexBasis: "100%",
@@ -1314,7 +1314,7 @@ export const Application = () => {
                     item
                     xs={12}
                     sm={12}
-                    md={3}
+                    md={4}
                     sx={{
                       "@media (max-width: 995px)": {
                         flexBasis: "100%",
@@ -1379,7 +1379,7 @@ export const Application = () => {
                     item
                     xs={12}
                     sm={12}
-                    md={3}
+                    md={4}
                     sx={{
                       "@media (max-width: 995px)": {
                         flexBasis: "100%",
@@ -1444,7 +1444,7 @@ export const Application = () => {
                     item
                     xs={12}
                     sm={12}
-                    md={3}
+                    md={4}
                     sx={{
                       "@media (max-width: 995px)": {
                         flexBasis: "100%",
@@ -1509,7 +1509,7 @@ export const Application = () => {
                     item
                     xs={12}
                     sm={12}
-                    md={3}
+                    md={4}
                     sx={{
                       "@media (max-width: 995px)": {
                         flexBasis: "100%",
@@ -1574,7 +1574,7 @@ export const Application = () => {
                     item
                     xs={12}
                     sm={12}
-                    md={3}
+                    md={4}
                     sx={{
                       "@media (max-width: 995px)": {
                         flexBasis: "100%",
@@ -1639,7 +1639,7 @@ export const Application = () => {
                     item
                     xs={12}
                     sm={12}
-                    md={3}
+                    md={4}
                     sx={{
                       "@media (max-width: 995px)": {
                         flexBasis: "100%",
@@ -1704,7 +1704,7 @@ export const Application = () => {
                     item
                     xs={12}
                     sm={12}
-                    md={3}
+                    md={4}
                     sx={{
                       "@media (max-width: 995px)": {
                         flexBasis: "100%",
@@ -1769,7 +1769,7 @@ export const Application = () => {
                     item
                     xs={12}
                     sm={12}
-                    md={3}
+                    md={4}
                     sx={{
                       "@media (max-width: 995px)": {
                         flexBasis: "100%",
@@ -1834,7 +1834,7 @@ export const Application = () => {
                     item
                     xs={12}
                     sm={12}
-                    md={3}
+                    md={4}
                     sx={{
                       "@media (max-width: 995px)": {
                         flexBasis: "100%",
@@ -1899,7 +1899,7 @@ export const Application = () => {
                     item
                     xs={12}
                     sm={12}
-                    md={3}
+                    md={4}
                     sx={{
                       "@media (max-width: 995px)": {
                         flexBasis: "100%",
@@ -1964,7 +1964,7 @@ export const Application = () => {
                     item
                     xs={12}
                     sm={12}
-                    md={3}
+                    md={4}
                     sx={{
                       "@media (max-width: 995px)": {
                         flexBasis: "100%",
@@ -2029,7 +2029,7 @@ export const Application = () => {
                     item
                     xs={12}
                     sm={12}
-                    md={3}
+                    md={4}
                     sx={{
                       "@media (max-width: 995px)": {
                         flexBasis: "100%",
@@ -2094,7 +2094,7 @@ export const Application = () => {
                     item
                     xs={12}
                     sm={12}
-                    md={3}
+                    md={4}
                     sx={{
                       "@media (max-width: 995px)": {
                         flexBasis: "100%",
@@ -2159,7 +2159,7 @@ export const Application = () => {
                     item
                     xs={12}
                     sm={12}
-                    md={3}
+                    md={4}
                     sx={{
                       "@media (max-width: 995px)": {
                         flexBasis: "100%",
@@ -2224,7 +2224,7 @@ export const Application = () => {
                     item
                     xs={12}
                     sm={12}
-                    md={3}
+                    md={4}
                     sx={{
                       "@media (max-width: 995px)": {
                         flexBasis: "100%",
@@ -2289,7 +2289,7 @@ export const Application = () => {
                     item
                     xs={12}
                     sm={12}
-                    md={3}
+                    md={4}
                     sx={{
                       "@media (max-width: 995px)": {
                         flexBasis: "100%",
