@@ -10,7 +10,6 @@ import { Metadata } from "next";
 import { ReactNode } from "react";
 import { Toaster } from "react-hot-toast";
 import initTranslations from "../i18n";
-import LogoD1 from "@/assets/LogoD1.svg";
 
 export async function generateMetadata({
   params,
@@ -19,6 +18,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { t } = await initTranslations(params.locale);
   const basePath = process.env.BASE_PATH || "";
+  const faviconUrl = `${basePath}/assets/LogoD1header.ico`; 
   return {
     metadataBase: new URL(`https://d1k58`),
     alternates: {
@@ -28,7 +28,7 @@ export async function generateMetadata({
         return prev;
       }, {} as Record<string, string>),
     },
-    icons: LogoD1,
+    icons: faviconUrl,
     // icons: `${basePath}/favicon.svg`,
     keywords: [
       "D1k58",
@@ -37,15 +37,17 @@ export async function generateMetadata({
     description: t("common.text.description"),
     openGraph: {
       // images: [`/meta/${params.locale}/banner.png`],
-      images: LogoD1,
+      images: faviconUrl,
       type: "website",
       url: `https://d1k58`,
       title: t("common.text.title"),
       description: t("common.text.description"),
     },
     twitter: {
+      images: {
+        url: faviconUrl, // Ensure that you have an object with a 'url' property
+      },
       // images: [`/meta/${params.locale}/banner.png`],
-      images: LogoD1,
       creator: "ka",
       title: t("common.text.title"),
       description: t("common.text.description"),
