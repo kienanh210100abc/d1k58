@@ -37,7 +37,7 @@ import trinh from "@/assets/trinh.svg";
 import van from "@/assets/van.svg";
 import viet from "@/assets/viet.svg";
 import vu from "@/assets/vu.svg";
-
+import thanh from "@/assets/thanhcon.svg";
 export const Application = () => {
   const { t } = useTranslation();
 
@@ -2089,7 +2089,72 @@ export const Application = () => {
                         </p>
                       </Box>
                     </Box>
-                  </Grid>{" "}
+                  </Grid>
+                  <Grid
+                    item
+                    xs={12}
+                    sm={12}
+                    md={3}
+                    sx={{
+                      "@media (max-width: 995px)": {
+                        flexBasis: "100%",
+                        maxWidth: "100%",
+                      },
+                    }}
+                  >
+                    <Box flex="1" minWidth="300px" bgcolor="transparent">
+                      <img
+                        src={thanh.src}
+                        alt="bg"
+                        style={{
+                          width: "100%",
+                          height: "auto",
+                          marginBottom: "10px",
+                          borderRadius: "20px",
+                        }}
+                      />
+                      <Box
+                        mt={2}
+                        sx={{
+                          fontSize: {
+                            lg: "24px",
+                          },
+                        }}
+                      >
+                        <p
+                          style={{
+                            fontWeight: "600",
+                            fontSize: "24px",
+                            lineHeight: "24px",
+                            textAlign: "justify",
+                            color: "#414142",
+                            height: "58px",
+                          }}
+                        >
+                          {t("application.thanh")}
+                        </p>
+                      </Box>
+                      <Box
+                        mt={2}
+                        sx={{
+                          fontSize: {
+                            lg: "16px",
+                          },
+                        }}
+                      >
+                        <p
+                          style={{
+                            fontWeight: "500",
+                            lineHeight: "19.5px",
+                            textAlign: "justify",
+                            color: "#414042",
+                          }}
+                        >
+                          {t("application.thanh2")}
+                        </p>
+                      </Box>
+                    </Box>
+                  </Grid>
                   <Grid
                     item
                     xs={12}
@@ -2219,7 +2284,8 @@ export const Application = () => {
                         </p>
                       </Box>
                     </Box>
-                  </Grid> <Grid
+                  </Grid>{" "}
+                  <Grid
                     item
                     xs={12}
                     sm={12}
