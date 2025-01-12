@@ -38,6 +38,9 @@ import van from "@/assets/van.svg";
 import viet from "@/assets/viet.svg";
 import vu from "@/assets/vu.svg";
 import thanh from "@/assets/thanhcon.svg";
+import chongdan from "@/assets/chongdan.svg";
+import phuongbui from "@/assets/phuongbui.svg";
+
 export const Application = () => {
   const { t } = useTranslation();
 
@@ -331,6 +334,72 @@ export const Application = () => {
                           }}
                         >
                           {t("application.tourist-ct")}
+                        </p>
+                      </Box>
+                    </Box>
+                  </Grid>
+                  <Grid
+                    item
+                    xs={12}
+                    sm={12}
+                    md={4}
+                    sx={{
+                      "@media (max-width: 995px)": {
+                        flexBasis: "100%",
+                        maxWidth: "100%",
+                      },
+                    }}
+                  >
+                    <Box flex="1" minWidth="300px" bgcolor="transparent">
+                      <img
+                        src={chongdan.src}
+                        alt="bg"
+                        style={{
+                          width: "100%",
+                          height: "auto",
+                          marginBottom: "10px",
+                          borderRadius: "20px",
+                        }}
+                      />
+                      <Box
+                        mt={2}
+                        sx={{
+                          fontSize: {
+                            lg: "24px",
+                          },
+                        }}
+                      >
+                        <p
+                          style={{
+                            fontWeight: "600",
+                            fontSize: "24px",
+                            lineHeight: "29.26px",
+                            textAlign: "justify",
+                            color: "#414142",
+                            height: "58px",
+                          }}
+                        >
+                          {t("application.ngocanh")}
+                        </p>
+                      </Box>
+                      <Box
+                        mt={2}
+                        sx={{
+                          fontSize: {
+                            lg: "16px",
+                          },
+                        }}
+                      >
+                        <p
+                          style={{
+                            fontWeight: "500",
+
+                            lineHeight: "19.5px",
+                            textAlign: "justify",
+                            color: "#414042",
+                          }}
+                        >
+                          {t("application.ngocanh2")}
                         </p>
                       </Box>
                     </Box>
@@ -1894,7 +1963,72 @@ export const Application = () => {
                         </p>
                       </Box>
                     </Box>
-                  </Grid>{" "}
+                  </Grid>
+                  <Grid
+                    item
+                    xs={12}
+                    sm={12}
+                    md={4}
+                    sx={{
+                      "@media (max-width: 995px)": {
+                        flexBasis: "100%",
+                        maxWidth: "100%",
+                      },
+                    }}
+                  >
+                    <Box flex="1" minWidth="300px" bgcolor="transparent">
+                      <img
+                        src={phuongbui.src}
+                        alt="bg"
+                        style={{
+                          width: "100%",
+                          height: "auto",
+                          marginBottom: "10px",
+                          borderRadius: "20px",
+                        }}
+                      />
+                      <Box
+                        mt={2}
+                        sx={{
+                          fontSize: {
+                            lg: "24px",
+                          },
+                        }}
+                      >
+                        <p
+                          style={{
+                            fontWeight: "600",
+                            fontSize: "24px",
+                            lineHeight: "24px",
+                            textAlign: "justify",
+                            color: "#414142",
+                            height: "58px",
+                          }}
+                        >
+                          {t("application.btp")}
+                        </p>
+                      </Box>
+                      <Box
+                        mt={2}
+                        sx={{
+                          fontSize: {
+                            lg: "16px",
+                          },
+                        }}
+                      >
+                        <p
+                          style={{
+                            fontWeight: "500",
+                            lineHeight: "19.5px",
+                            textAlign: "justify",
+                            color: "#414042",
+                          }}
+                        >
+                          {t("application.btp2")}
+                        </p>
+                      </Box>
+                    </Box>
+                  </Grid>
                   <Grid
                     item
                     xs={12}
