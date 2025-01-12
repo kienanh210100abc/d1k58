@@ -104,44 +104,48 @@ export const SummaryIntro = () => {
               </Stack>
             </Grid>
             <Grid item xs={12} sm={12} md={6}>
-              {!loaded && (
-                <Typography
-                  sx={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    fontSize: "50px",
-                    fontWeight: "600",
-                    height: "100%",
-                  }}
-                >
-                  <MoonLoader style={{ color: "#393939" }} />
-                </Typography>
-              )}
-              <img
-                src={images[currentImage]}
-                alt="intro image"
-                width="100%"
-                style={{ display: loaded ? "block" : "none" }}
-              />
-              <Grid style={{display:"flex", justifyContent:"flex-end"}}>
-              <Button onClick={prevImage} disabled={!loaded}>Trước</Button>
-              <Button onClick={nextImage} disabled={!loaded}>Sau</Button>
-              </Grid>
-              <Box display="flex" justifyContent="center" mt={2}>
-                {images.map((_, index) => (
-                  <Box
-                    key={index}
-                    width={8}
-                    height={8}
-                    bgcolor={currentImage === index ? "#00A64F" : "#bbb"}
-                    borderRadius="50%"
-                    mx={0.5}
-                    component="span"
-                  />
-                ))}
-              </Box>
-            </Grid>
+  {!loaded ? (
+    <Typography
+      sx={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        fontSize: "50px",
+        fontWeight: "600",
+        height: "100%",
+      }}
+    >
+      <MoonLoader style={{ color: "#393939", marginBottom:"100px", marginTop:"50px"}} />
+    </Typography>
+  ) : (
+    <>
+      <img
+        src={images[currentImage]}
+        alt="intro image"
+        width="100%"
+        style={{ display: "block" }}
+      />
+      <Grid style={{display:"flex", justifyContent:"flex-end"}}>
+        <Button onClick={prevImage}>Trước</Button>
+        <Button onClick={nextImage}>Sau</Button>
+      </Grid>
+      <Box display="flex" justifyContent="center" mt={2}>
+        {images.map((_, index) => (
+          <Box
+            key={index}
+            width={8}
+            height={8}
+            bgcolor={currentImage === index ? "#00A64F" : "#bbb"}
+            borderRadius="50%"
+            mx={0.5}
+            component="span"
+          />
+        ))}
+      </Box>
+    </>
+  )}
+</Grid>
+
           </Grid>
         </Container>
       </Stack>
