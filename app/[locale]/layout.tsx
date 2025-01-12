@@ -10,6 +10,7 @@ import { Metadata } from "next";
 import { ReactNode } from "react";
 import { Toaster } from "react-hot-toast";
 import initTranslations from "../i18n";
+import LogoD1 from "@/assets/LogoD1.svg";
 
 export async function generateMetadata({
   params,
@@ -27,6 +28,7 @@ export async function generateMetadata({
         return prev;
       }, {} as Record<string, string>),
     },
+    icons: LogoD1,
     // icons: `${basePath}/favicon.svg`,
     keywords: [
       "D1k58",
@@ -35,6 +37,7 @@ export async function generateMetadata({
     description: t("common.text.description"),
     openGraph: {
       // images: [`/meta/${params.locale}/banner.png`],
+      images: LogoD1,
       type: "website",
       url: `https://d1k58`,
       title: t("common.text.title"),
@@ -42,6 +45,7 @@ export async function generateMetadata({
     },
     twitter: {
       // images: [`/meta/${params.locale}/banner.png`],
+      images: LogoD1,
       creator: "ka",
       title: t("common.text.title"),
       description: t("common.text.description"),
