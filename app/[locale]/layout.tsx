@@ -17,10 +17,11 @@ export async function generateMetadata({
   params: { locale: string };
 }): Promise<Metadata> {
   const { t } = await initTranslations(params.locale);
-  const basePath = process.env.BASE_PATH || "";
-  const faviconUrl = `${basePath}/assets/LogoD1header.ico`; 
+  // const basePath = process.env.BASE_PATH || "";
+  // const faviconUrl = `${basePath}/assets/LogoD1header.ico`; 
+  const faviconUrl = `@/assets/LogoD1header.ico`;
   return {
-    metadataBase: new URL(`https://d1k58`),
+    metadataBase: new URL(`https://d1-k58`),
     alternates: {
       canonical: "/",
       languages: i18nConfig.locales.reduce((prev, lang) => {
@@ -39,7 +40,7 @@ export async function generateMetadata({
       // images: [`/meta/${params.locale}/banner.png`],
       images: faviconUrl,
       type: "website",
-      url: `https://d1k58`,
+      url: `https://d1-k58`,
       title: t("common.text.title"),
       description: t("common.text.description"),
     },
